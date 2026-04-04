@@ -51,7 +51,7 @@ new Swiper(".productSwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     // loop: true,
-    autoplay: { delay: 5000 },
+    // autoplay: { delay: 0 },
     navigation: {
         nextEl: ".custom-next",
         prevEl: ".custom-prev",
