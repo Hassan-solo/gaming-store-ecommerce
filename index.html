@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title page -->
+    <title>TECH SHOP</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- link font icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!-- link swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="top-header">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div>
+            <h1>Tech Shop</h1>
+          </div>
+        </div>
+
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Search for latest tech, gaming gear..."
+          />
+          <button>SEARCH</button>
+        </div>
+
+        <div class="header-actions">
+          <div class="account">
+            <span>Hello, Sign in</span>
+            <div class="account-link">
+              Account & Lists <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <div class="cart" id="cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-badge" id="cart-badge">0</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <div class="categories">
+          <i class="fas fa-bars"></i>
+          <span>Browse Categories</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Deals</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="support">
+          <i class="fas fa-headset"></i>
+          <span>24/7 Support: +212 600 000 000</span>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <main>
+      <section>
+        <div class="back_swiper">
+          <div class="swiper myHeroSwiper">
+            <div class="swiper-wrapper">
+              <!-- SLIDE 1 -->
+              <div
+                class="swiper-slide hero-slide"
+                style="
+                  background-image: url(&quot;/assets/slide/man.jpg&quot;);
+                "
+              >
+                <div class="overlay"></div>
+
+                <div class="content">
+                  <span class="badge">Next Gen Gear</span>
+
+                  <h1 class="title">
+                    DOMINATE THE <br />
+                    <span class="blue">GAMING</span> WORLD
+                  </h1>
+
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Consequatur hic velit, eligendi molestias nobis modi.
+                  </p>
+
+                  <div class="buttons">
+                    <a href="#" class="btn primary">
+                      <span>SHOP NOW</span>
+                    </a>
+
+                    <a href="#" class="btn outline">
+                      <span>DEALS</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div
+                class="swiper-slide hero-slide"
+                style="
+                  background-image: url(&quot;/assets/slide/woman.jpg&quot;);
+                "
+              >
+                <div class="overlay"></div>
+
+                <div class="content">
+                  <span class="badge">ULTRA PERFORMANCE</span>
+
+                  <h1 class="title">
+                    DOMINATE THE <br />
+                    <span class="blue">GAMING</span> WORLD
+                  </h1>
+
+                  <p class="desc">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Consequatur hic velit, eligendi molestias nobis modi.
+                  </p>
+
+                  <a href="#" class="btn white">
+                    <span>EXPLORE MORE</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="swiper-pagination gaming_hero"></div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
