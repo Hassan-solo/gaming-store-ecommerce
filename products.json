@@ -1,0 +1,86 @@
+
+
+[
+  {
+    "title": "Ambi Wired Gaming Mouse",
+    "price": "$59.00 USD",
+    "badge": "New!",
+    "image": "/assets/products/mous-1.png",
+    "colors": [
+      {
+        "color": "red",
+        "image": "/assets/products/mous-2.png"
+      },
+      {
+        "color": "gold",
+        "image": "/assets/products/mous-3.png"
+      },
+      {
+        "color": "blue",
+        "image": "/assets/products/mous-1.png"
+      }
+    ]
+  },
+  {
+    "title": "Essential Gaming Mouse",
+    "price": "$55.00 USD",
+    "badge": "New!",
+    "image": "/assets/products/maike1.png",
+    "colors": [
+      {
+        "color": "pink",
+        "image": "/assets/products/maike2.png"
+      },
+      {
+        "color": "gold",
+        "image": "/assets/products/maike3.png"
+      },
+      {
+        "color": "blue",
+        "image": "/assets/products/maike1.png"
+      }
+    ]
+  },
+
+  {
+    "title": "Essential Gaming Mouse",
+    "price": "$55.00 USD",
+    "badge": "New!",
+    "image": "/assets/products/maike1.png",
+    "colors": [
+      {
+        "color": "pink",
+        "image": "/assets/products/maike2.png"
+      },
+      {
+        "color": "gold",
+        "image": "/assets/products/maike3.png"
+      },
+      {
+        "color": "blue",
+        "image": "/assets/products/maike1.png"
+      }
+    ]
+  },
+
+  {
+    "title": "Essential Gaming Mouse",
+    "price": "$55.00 USD",
+    "badge": "New!",
+    "image": "/assets/products/maike1.png",
+    "colors": [
+      {
+        "color": "pink",
+        "image": "/assets/products/maike2.png"
+      },
+      {
+        "color": "gold",
+        "image": "/assets/products/maike3.png"
+      },
+      {
+        "color": "blue",
+        "image": "/assets/products/maike1.png"
+      }
+    ]
+  }
+]
