@@ -61,3 +61,13 @@ new Swiper(".productSwiper", {
         1200: { slidesPerView: 3 }
     }
 });
+
+
+// Categories 
+const categories = document.querySelectorAll(".grid-item");
+
+categories.forEach(cate =>{
+      cate.addEventListener("click" , () => {
+           window.location.href = "shop.html";
+      })
+})
