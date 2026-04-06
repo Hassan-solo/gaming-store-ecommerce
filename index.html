@@ -1,239 +1,257 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- title page -->
-    <title>TECH SHOP</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- link font icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <!-- link swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="top-header">
-        <div class="logo">
-          <div class="logo-icon">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-          <div>
-            <h1>Tech Shop</h1>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- title page -->
+  <title>TECH SHOP</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- link font icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!-- link swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="top-header">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-shopping-cart"></i>
         </div>
-
-        <div class="search-box">
-          <input
-            type="text"
-            placeholder="Search for latest tech, gaming gear..."
-          />
-          <button>SEARCH</button>
-        </div>
-
-        <div class="header-actions">
-          <div class="account">
-            <span>Hello, Sign in</span>
-            <div class="account-link">
-              Account & Lists <i class="fas fa-chevron-down"></i>
-            </div>
-          </div>
-
-          <div class="cart" id="cart">
-            <i class="fas fa-shopping-bag"></i>
-            <span class="cart-badge" id="cart-badge">0</span>
-          </div>
+        <div>
+          <h1>Tech Shop</h1>
         </div>
       </div>
 
-      <nav class="navbar">
-        <div class="categories">
-          <i class="fas fa-bars"></i>
-          <span>Browse Categories</span>
+      <div class="search-box">
+        <input type="text" placeholder="Search for latest tech, gaming gear..." />
+        <button>SEARCH</button>
+      </div>
+
+      <div class="header-actions">
+        <div class="account">
+          <span>Hello, Sign in</span>
+          <div class="account-link">
+            Account & Lists <i class="fas fa-chevron-down"></i>
+          </div>
         </div>
 
-        <div class="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Shop</a>
-          <a href="#">Deals</a>
-          <a href="#">Contact</a>
+        <div class="cart" id="cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-badge" id="cart-badge">0</span>
         </div>
+      </div>
+    </div>
 
-        <div class="support">
-          <i class="fas fa-headset"></i>
-          <span>24/7 Support: +212 600 000 000</span>
-        </div>
-      </nav>
-    </header>
-    <!-- End Header -->
+    <nav class="navbar">
+      <div class="categories">
+        <i class="fas fa-bars"></i>
+        <span>Browse Categories</span>
+      </div>
 
-    <!-- started main with sections  -->
-    <main>
-      <section>
-        <div class="back_swiper">
-          <div class="swiper myHeroSwiper">
-            <div class="swiper-wrapper">
-              <!-- SLIDE 1 -->
-              <div
-                class="swiper-slide hero-slide"
-                style="background-image: url(&quot;/assets/slide/man.jpg&quot;)"
-              >
-                <div class="overlay"></div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+      </div>
 
-                <div class="content">
-                  <span class="badge">Next Gen Gear</span>
+      <div class="support">
+        <i class="fas fa-headset"></i>
+        <span>24/7 Support: +212 600 000 000</span>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+  <!-- started main with sections  -->
+  <main>
 
-                  <h1 class="title">
-                    DOMINATE THE <br />
-                    <span class="blue">GAMING</span> WORLD
-                  </h1>
+    <!-- add cart to  -->
+    <section>
 
-                  <p class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consequatur hic velit, eligendi molestias nobis modi.
-                  </p>
+      <div class="carts">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+          <div class="cart-box">
+            <img src="assets/products/maike2.png" alt="">
+            <div class="cart-detail">
 
-                  <div class="buttons">
-                    <a href="#" class="btn primary">
-                      <span>SHOP NOW</span>
-                    </a>
+              <h2 class="cart-product-title"> Casual Black Polo</h2>
+              <span class="cart-price">$100</span>
+              <div class="cart-quantity">
+                <button id="decremment">-</button>
+                <span class="number">1</span>
+                <button id="decremment">+</button>
 
-                    <a href="#" class="btn outline">
-                      <span>DEALS</span>
-                    </a>
-                  </div>
-                </div>
               </div>
 
-              <!-- SLIDE 2 -->
-              <div
-                class="swiper-slide hero-slide"
-                style="
-                  background-image: url(&quot;/assets/slide/woman.jpg&quot;);
-                "
-              >
-                <div class="overlay"></div>
+            </div>
+            <i class="fa-solid fa-trash cart-remove"></i>
+          </div>
+        </div>
+        <div class="total">
+          <div class="total-title">
+            Total
+          </div>
+          <div class="total-price">
+            $0
+          </div>
+          <button class="btn-buy">Buy Now</button>
+          <i class="fa-solid fa-xmark" id="cart-close"></i>
+        </div>
+      </div>
 
-                <div class="content">
-                  <span class="badge">ULTRA PERFORMANCE</span>
+    </section>
 
-                  <h1 class="title">
-                    DOMINATE THE <br />
-                    <span class="blue">GAMING</span> WORLD
-                  </h1>
+    <section>
+      <div class="back_swiper">
+        <div class="swiper myHeroSwiper">
+          <div class="swiper-wrapper">
+            <!-- SLIDE 1 -->
+            <div class="swiper-slide hero-slide" style="background-image: url(&quot;/assets/slide/man.jpg&quot;)">
+              <div class="overlay"></div>
 
-                  <p class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consequatur hic velit, eligendi molestias nobis modi.
-                  </p>
+              <div class="content">
+                <span class="badge">Next Gen Gear</span>
 
-                  <a href="#" class="btn white">
-                    <span>EXPLORE MORE</span>
+                <h1 class="title">
+                  DOMINATE THE <br />
+                  <span class="blue">GAMING</span> WORLD
+                </h1>
+
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur hic velit, eligendi molestias nobis modi.
+                </p>
+
+                <div class="buttons">
+                  <a href="#" class="btn primary">
+                    <span>SHOP NOW</span>
+                  </a>
+
+                  <a href="#" class="btn outline">
+                    <span>DEALS</span>
                   </a>
                 </div>
               </div>
             </div>
 
-            <!-- <div class="swiper-pagination gaming_hero"></div> -->
+            <!-- SLIDE 2 -->
+            <div class="swiper-slide hero-slide" style="
+                  background-image: url(&quot;/assets/slide/woman.jpg&quot;);
+                ">
+              <div class="overlay"></div>
+
+              <div class="content">
+                <span class="badge">ULTRA PERFORMANCE</span>
+
+                <h1 class="title">
+                  DOMINATE THE <br />
+                  <span class="blue">GAMING</span> WORLD
+                </h1>
+
+                <p class="desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur hic velit, eligendi molestias nobis modi.
+                </p>
+
+                <a href="#" class="btn white">
+                  <span>EXPLORE MORE</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="swiper-pagination gaming_hero"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Add icon whatsapp -->
+    <section>
+      <a href="https://wa.me/+212648767954" class="whatsapp-fixed" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+      </a>
+    </section>
+
+    <section class="product-slider">
+      <h2 class="slider-title">Gaming Accessories</h2>
+
+      <div class="swiper productSwiper">
+        <div class="swiper-wrapper">
+          <!-- products  -->
+        </div>
+
+        <div class="swiper-controls">
+          <div class="swiper-button-prev custom-prev"></div>
+          <div class="swiper-button-next custom-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container" id="featured">
+      <div class="grid-container">
+
+        <div class="grid-item featured-item ">
+          <img src="assets/category_name/c1.jpg" alt="" />
+          <div class="featured-content active">
+            <h3>play station 5</h3>
+            <p>
+              Experience next-gen gaming with the PlayStation 5, featuring
+              stunning graphics and lightning-fast load times.
+            </p>
           </div>
         </div>
-      </section>
 
-      <!-- Add icon whatsapp -->
-      <section>
-        <a
-          href="https://wa.me/+212648767954"
-          class="whatsapp-fixed"
-          target="_blank"
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-            alt="WhatsApp"
-          />
-        </a>
-      </section>
-
-      <section class="product-slider">
-        <h2 class="slider-title">Gaming Accessories</h2>
-
-        <div class="swiper productSwiper">
-          <div class="swiper-wrapper">
-            <!-- products  -->
-          </div>
-
-          <div class="swiper-controls">
-            <div class="swiper-button-prev custom-prev"></div>
-            <div class="swiper-button-next custom-next"></div>
+        <div class="grid-item featured-item">
+          <img src="assets/category_name/c2.png" alt="" />
+          <div class="featured-content">
+            <h3>gaming headphone</h3>
+            <p>
+              Immerse yourself in high-quality sound with our latest gaming
+              headphones.
+            </p>
           </div>
         </div>
-      </section>
-     
-      <section class="section-container" id="featured">
-        <div class="grid-container">
-          
-          <div class="grid-item featured-item ">
-            <img src="assets/category_name/c1.jpg" alt="" />
-            <div class="featured-content active">
-              <h3>play station 5</h3>
-              <p>
-                Experience next-gen gaming with the PlayStation 5, featuring
-                stunning graphics and lightning-fast load times.
-              </p>
-            </div>
-          </div>
 
-          <div class="grid-item featured-item">
-            <img src="assets/category_name/c2.png" alt="" />
-            <div class="featured-content">
-              <h3>gaming headphone</h3>
-              <p>
-                Immerse yourself in high-quality sound with our latest gaming
-                headphones.
-              </p>
-            </div>
-          </div>
-
-          <div class="grid-item featured-item">
-            <img src="assets/category_name/c3.png" alt="" />
-            <div class="featured-content">
-              <h3>HomePod and HomePod mini</h3>
-              <p>Experience immersive sound with HomePod and HomePod mini.</p>
-            </div>
-          </div>
-
-          <div class="grid-item featured-item">
-            <img src="assets/category_name/c4.jpg" alt="" />
-            <div class="featured-content">
-              <h3>wireless mechanical keyboard</h3>
-              <p>
-                Elevate your typing experience with our wireless mechanical
-                keyboard.
-              </p>
-            
-            </div>
+        <div class="grid-item featured-item">
+          <img src="assets/category_name/c3.png" alt="" />
+          <div class="featured-content">
+            <h3>HomePod and HomePod mini</h3>
+            <p>Experience immersive sound with HomePod and HomePod mini.</p>
           </div>
         </div>
+
+        <div class="grid-item featured-item">
+          <img src="assets/category_name/c4.jpg" alt="" />
+          <div class="featured-content">
+            <h3>wireless mechanical keyboard</h3>
+            <p>
+              Elevate your typing experience with our wireless mechanical
+              keyboard.
+            </p>
+
+          </div>
+        </div>
+      </div>
 
       </div>
     </section>
 
 
 
-    </main>
-    <!-- end main -->
+  </main>
+  <!-- end main -->
 
-    <!-- footer -->
-    <!-- end footer -->
+  <!-- footer -->
+  <!-- end footer -->
 
-    <!-- swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
