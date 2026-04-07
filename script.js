@@ -85,6 +85,23 @@ const categories = document.querySelectorAll(".grid-item");
 
 categories.forEach(cate =>{
       cate.addEventListener("click" , () => {
-           window.location.href = "shop.html";
+          window.location.href = "shop.html";
       })
 })
+
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: { delay: 3000 },
+    navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+    },
+    breakpoints: {
+        640: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 }
+    }
+});

@@ -237,7 +237,7 @@
     padding: 65px 20px 40px;
     z-index: 100;
     overflow: auto;
-    transition: 0.5s ease;
+    transition: 0.5s ease-in-out;
 }
 
 
