@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- title page -->
   <title>TECH SHOP</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- link css -->
+  <link rel="stylesheet" href="css_/style.css" />
+  <link rel="stylesheet" href="css_/header.css">
+
   <!-- link font icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   <!-- link swiper -->
@@ -78,7 +81,7 @@
 
 
           <div class="cart-box">
-            <img src="assets/products/maike2.png" alt="">
+            <img src="assets/products/mous/souri-1.webp" alt="mous">
             <div class="cart-detail">
 
               <h2 class="cart-product-title"> Casual Black Polo</h2>
@@ -115,11 +118,11 @@
         <div class="swiper myHeroSwiper">
           <div class="swiper-wrapper">
             <!-- SLIDE 1 -->
-            <div class="swiper-slide hero-slide" style="background-image: url(&quot;/assets/slide/man.jpg&quot;)">
+            <div class="swiper-slide hero-slide" style="background-image: url(&quot;/assets/banners/man.jpg&quot;)">
               <div class="overlay"></div>
 
               <div class="content">
-                <span class="badge">Next Gen Gear</span>
+                <span class="badges">Next Gen Gear</span>
 
                 <h1 class="title">
                   DOMINATE THE <br />
@@ -145,12 +148,12 @@
 
             <!-- SLIDE 2 -->
             <div class="swiper-slide hero-slide" style="
-                  background-image: url(&quot;/assets/slide/woman.jpg&quot;);
+                  background-image: url(&quot;/assets/banners/woman.jpg&quot;);
                 ">
               <div class="overlay"></div>
 
               <div class="content">
-                <span class="badge">ULTRA PERFORMANCE</span>
+                <span class="badges">ULTRA PERFORMANCE</span>
 
                 <h1 class="title">
                   DOMINATE THE <br />
@@ -180,75 +183,80 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
       </a>
     </section>
-     
-    <!-- slider products -->
+
+
     <section class="product-slider">
       <h2 class="slider-title">Gaming Accessories</h2>
 
       <div class="swiper productSwiper">
         <div class="swiper-wrapper">
-          <!-- products  -->
+          <!-- slide -->
+          <div class="swiper-slide product-card">
+            <span class="badge">New!</span>
+            <img src="assets/products/mous/souri-1.webp" alt="" class="main-product-img" />
+            <h4>Logitech G102 LightSync RGB </h4>
+            <p> 199.00 dh</p>
+            <div class="color-dots">
+              <span class="dot pink" style="background-color: black"
+                data-image="assets/products/mous/souri-2.webp"></span>
+              <span class="dot gold" style="background-color: blue;"
+                data-image="assets/products/mous/souri-3.webp"></span>
+              <span class="dot blue" data-image="assets/products/mous/souri-1.webp"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide product-card">
+            <span class="badge">New!</span>
+            <img src="assets/products/keyabord/Keyboard-1.webp" alt="" class="main-product-img" />
+            <h4>Redragon K617 Fizz </h4>
+            <p> 299.00 dh</p>
+            <div class="color-dots">
+              <span class="dot pink" style="background-color: pink"
+                data-image="assets/products/keyabord/Keyboard-2.webp"></span>
+              <span class="dot gold" data-image="assets/products/keyabord/Keyboard-1.webp"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide product-card">
+            <span class="badge">New!</span>
+            <img src="assets/products/mous-1.png" alt="" class="main-product-img" />
+            <h4>Pro Gaming Mouse</h4>
+            <p>From $65.00 USD</p>
+            <div class="color-dots">
+              <span class="dot pink" style="background-color: coral" data-image="/gaming_images/kaybord2.png"></span>
+              <span class="dot gold" style="background-color: chartreuse"
+                data-image="/gaming_images/kaybord3.png"></span>
+              <span class="dot blue" data-image="/gaming_images/kaybord1.png"></span>
+            </div>
+          </div>
+
+          <div class="swiper-slide product-card">
+            <span class="badge">New!</span>
+            <img src="assets/products/gamesir/gamesir-1.webp" alt="" class="main-product-img" />
+            <h4>HyperSpeed Wireless Mouse</h4>
+            <p>From $115.00 USD</p>
+            <div class="color-dots">
+              <span class="dot pink" style="background-color: rgb(217, 105, 124)"
+                data-image="assets/products/gamesir/gamesir-2.webp"></span>
+              <span class="dot gold" data-image="assets/products/gamesir/gamesir-3.webp"
+                style="background-color: blue"></span>
+              <span class="dot gold" data-image="assets/products/gamesir/gamesir-4.webp"
+                style="background-color: #2171bd"></span>
+            </div>
+          </div>
         </div>
 
+        <!-- arrows -->
         <div class="swiper-controls">
           <div class="swiper-button-prev custom-prev"></div>
           <div class="swiper-button-next custom-next"></div>
         </div>
       </div>
     </section>
-     
-    <!-- featured category -->
-    <section class="section-container" id="featured">
-      <div class="grid-container">
 
-        <div class="grid-item featured-item ">
-          <img src="assets/category_name/c1.jpg" alt="" />
-          <div class="featured-content active">
-            <h3>play station 5</h3>
-            <p>
-              Experience next-gen gaming with the PlayStation 5, featuring
-              stunning graphics and lightning-fast load times.
-            </p>
-          </div>
-        </div>
 
-        <div class="grid-item featured-item">
-          <img src="assets/category_name/c2.png" alt="" />
-          <div class="featured-content">
-            <h3>gaming headphone</h3>
-            <p>
-              Immerse yourself in high-quality sound with our latest gaming
-              headphones.
-            </p>
-          </div>
-        </div>
 
-        <div class="grid-item featured-item">
-          <img src="assets/category_name/c3.png" alt="" />
-          <div class="featured-content">
-            <h3>HomePod and HomePod mini</h3>
-            <p>Experience immersive sound with HomePod and HomePod mini.</p>
-          </div>
-        </div>
-
-        <div class="grid-item featured-item">
-          <img src="assets/category_name/c4.jpg" alt="" />
-          <div class="featured-content">
-            <h3>wireless mechanical keyboard</h3>
-            <p>
-              Elevate your typing experience with our wireless mechanical
-              keyboard.
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-      </div>
-    </section>
-     
-
-    <!-- SECTION PRO  DUCTS SWIPER chair -->
+    <!-- SECTION PRODUCTS SWIPER chair -->
     <section class="tech-collection">
       <div class="collection-container">
         <div class="collection-info">
@@ -257,7 +265,7 @@
             Our specialists at Techspace.ma have selected a wide choice of
             computer devices for you.
           </p>
-          <a href="#" class="see-more-btn">See more</a>
+          <a href="#" class="see-more-btn">SHOP NOW</a>
         </div>
 
         <div class="collection-slider-wrapper">
@@ -266,21 +274,16 @@
               <div class="swiper-slide">
                 <div class="p-card">
                   <div class="p-img">
-                    <img
-                      src="/gaming_images/chair-2.png"
-                      alt="Logitech"
-                      class="main-img"
-                    />
-                    <img
-                      src="/gaming_images/chair-1.png"
-                      alt="chair gaming"
-                      class="hover-img"
-                    />
+                    <img src="assets/chair/chair_home/chair-1.webp" alt="chair" class="main-img" />
+                    <img src="assets/chair/chair_home/chair-2.webp" alt="chair gaming" class="hover-img" />
                   </div>
                   <div class="p-details">
-                    <span class="p-brand">Cooler Master</span>
-                    <h3>Cooler Master Caliber R3 Purple</h3>
-                    <div class="p-price">$199</div>
+                    <span class="p-brand">HYBROK</span>
+                    <h3>Hybrok Ghost Pink</h3>
+                    <div class="p-shop">
+                      <div class="p-price">1,990.00 dh</div>
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
                     <div class="p-stock">
                       <span class="dott"></span> In stock.
                     </div>
@@ -291,21 +294,16 @@
               <div class="swiper-slide">
                 <div class="p-card">
                   <div class="p-img">
-                    <img
-                      src="/gaming_images/chair-3.png"
-                      alt="Logitech"
-                      class="main-img"
-                    />
-                    <img
-                      src="/gaming_images/chiar-4.png"
-                      alt="chair gaming"
-                      class="hover-img"
-                    />
+                    <img src="assets/chair/chair_home/chair-3.webp" alt="chair gaming" class="main-img" />
+                    <img src="assets/chair/chair_home/chair-4.webp" alt="chair gaming" class="hover-img" />
                   </div>
                   <div class="p-details">
-                    <span class="p-brand">LOGITECH</span>
-                    <h3>Caliber R3 (White/Grey)</h3>
-                    <div class="p-price">$200</div>
+                    <span class="p-brand">RAZER</span>
+                    <h3>Razer Iskur V2 X Black</h3>
+                    <div class="p-shop">
+                      <div class="p-price">3,499.00 dh</div>
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
                     <div class="p-stock">
                       <span class="dott"></span> In stock.
                     </div>
@@ -316,21 +314,16 @@
               <div class="swiper-slide">
                 <div class="p-card">
                   <div class="p-img">
-                    <img
-                      src="/gaming_images/chair_4.png"
-                      alt="Logitech"
-                      class="main-img"
-                    />
-                    <img
-                      src="/gaming_images/chair_6.png"
-                      alt="chair gaming"
-                      class="hover-img"
-                    />
+                    <img src="assets/chair/chair_home/chair-5.webp" alt="Logitech" class="main-img" />
+                    <img src="assets/chair/chair_home/chair-6.webp" alt="chair gaming" class="hover-img" />
                   </div>
                   <div class="p-details">
-                    <span class="p-brand">NANO</span>
-                    <h3>NANO Spider Gaming Chair (Spider Edition)</h3>
-                    <div class="p-price">$180</div>
+                    <span class="p-brand">SKILLCHAIRS</span>
+                    <h3>SKILLCHAIRS SC12 EVELYNNE</h3>
+                    <div class="p-shop">
+                      <div class="p-price">2,990.00 dh</div>
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
                     <div class="p-stock">
                       <span class="dott"></span> In stock.
                     </div>
@@ -341,22 +334,17 @@
               <div class="swiper-slide">
                 <div class="p-card">
                   <div class="p-img">
-                    <img
-                      src="/gaming_images/chair_8.png"
-                      alt="Logitech"
-                      class="main-img"
-                    />
-                    <img
-                      src="/gaming_images/chair_9.png"
-                      alt="chair gaming"
-                      class="hover-img"
-                    />
+                    <img src="assets/chair/chair_home/chair-7.webp" alt="chair" class="main-img" />
+                    <img src="assets/chair/chair_home/chair-8.webp" alt="chair gaming" class="hover-img" />
                   </div>
 
                   <div class="p-details">
-                    <span class="p-brand">NANO</span>
-                    <h3>NANO Spider Gaming Chair (Green/Black Edition)</h3>
-                    <div class="p-price">$220</div>
+                    <span class="p-brand">HYBROK</span>
+                    <h3>Hybrok Destiny</h3>
+                    <div class="p-shop">
+                      <div class="p-price">2,199.00 dh</div>
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
                     <div class="p-stock">
                       <span class="dott"></span> In stock.
                     </div>
@@ -367,21 +355,16 @@
               <div class="swiper-slide">
                 <div class="p-card">
                   <div class="p-img">
-                    <img
-                      src="/gaming_images/chair_3gaming.png"
-                      alt="Logitech"
-                      class="main-img"
-                    />
-                    <img
-                      src="/gaming_images/chair_7.png"
-                      alt="chair gaming"
-                      class="hover-img"
-                    />
+                    <img src="assets/chair/chair_home/chair_9.webp" alt="Logitech" class="main-img" />
+                    <img src="assets/chair/chair_home/chair-10.webp" alt="chair gaming" class="hover-img" />
                   </div>
                   <div class="p-details">
-                    <span class="p-brand">LOGITECH</span>
-                    <h3>NANO Spider Gaming Chair (Purple/Black Edition)</h3>
-                    <div class="p-price">$180</div>
+                    <span class="p-brand">NOBLECHAIRS</span>
+                    <h3>Noblechairs Epic Compact Black/Carbon</h3>
+                    <div class="p-shop">
+                      <div class="p-price">3,699.00 dh</div>
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
                     <div class="p-stock">
                       <span class="dott"></span> In stock.
                     </div>
@@ -397,7 +380,8 @@
     </section>
 
 
-   
+
+
 
 
 
@@ -410,7 +394,8 @@
 
   <!-- swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/header.js"></script>
 </body>
 
 </html>
