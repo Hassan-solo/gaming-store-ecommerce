@@ -26,7 +26,7 @@ new Swiper(".productSwiper", {
     320: {
       slidesPerView: 1,
     },
-    500: {
+    620: {
       slidesPerView: 2,
     },
     1024: {
