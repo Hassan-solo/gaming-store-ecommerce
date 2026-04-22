@@ -689,7 +689,7 @@
 
 /* Card Styling */
 .desk-card {
-    background: var(--bg-white);
+    background: var(--white-color);
     border-radius: 12px;
     padding: 20px;
     display: flex;
