@@ -468,6 +468,7 @@
     padding: 30px 5%;
     background-color:var(--white-color);
     margin-top: 20px;
+
 }
 
 .collection-container {
@@ -632,5 +633,141 @@
         text-align: center;
     }
     .collection-info { margin-bottom: 30px; }
+}
+
+
+
+
+/* style section category  desk */
+
+.desk-slide{
+   /* margin-top: 20px; */
+     padding: 30px 5%;
+     margin-top: 40px;
+}
+
+.desk-header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+
+.desk-title {
+   background-color: var(--second-color);
+   color: var(--white-color);
+   padding: 10px;
+   border-top-left-radius: 10px;
+   font-size: 1.2rem;
+
+}
+
+.desk-controls .desk-prev,
+.desk-controls .desk-next {
+   background-color: var(--second-color);
+   padding: 8px;
+   color: var(--white-color);
+   border-radius: 8px;
+   border: none;
+   cursor: pointer;
+   margin-left: 10px;
+   
+}
+
+.desk-controls .desk-prev i ,
+.desk-controls .desk-next i{
+   font-size: 20px;
+}
+
+
+/* Grid Layout */
+.desk-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Card Styling */
+.desk-card {
+    background: var(--bg-white);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+}
+
+
+.desk-img {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.desk-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.desk-brand {
+    color: var(--gray-ligh);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.desk-name {
+    color: var(--second-color);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 8px 0 15px 0;
+    min-height: 42px;
+    line-height: 1.4;
+}
+
+/* Price & Icon Row */
+.desk-p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desk-p i{
+    color: #555;
+    font-size: 25px;
+}
+
+.desk-price {
+    color: var(--price);
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+
+
+/* Stock Status */
+.desk-stock {
+    margin-top: 15px;
+}
+
+.dots {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.dots::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--green);
+    border-radius: 50%;
+    margin-right: 8px;
 }
 
