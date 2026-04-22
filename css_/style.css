@@ -656,9 +656,9 @@
 .desk-title {
    background-color: var(--second-color);
    color: var(--white-color);
-   padding: 10px;
+   padding:0.7rem 40px;
    border-top-left-radius: 10px;
-   font-size: 1.2rem;
+   font-size: 1rem;
 
 }
 
@@ -699,6 +699,7 @@
 
 
 .desk-img {
+  position: relative;
     height: 180px;
     display: flex;
     align-items: center;
@@ -713,10 +714,40 @@
     object-fit: contain;
 }
 
+
+.desk-img .img-main {
+    opacity: 1;
+    z-index: 1;
+}
+
+.desk-img .img-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1); 
+    opacity: 0;
+    z-index: 2;
+}
+
+/* HOVER ACTIONS */
+.desk-card:hover .img-main {
+    opacity: 0; 
+    
+}
+
+.desk-card:hover .img-hover {
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(1); 
+    transition: 1s ease-in-out;
+    
+    
+}
+
 .desk-brand {
     color: var(--gray-ligh);
     font-size: 16px;
     font-weight: 500;
+  
 }
 
 .desk-name {
@@ -733,6 +764,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    
 }
 
 .desk-p i{
