@@ -690,3 +690,7 @@
 
 }
 
+
+.nj{
+   border-bottom: 3px solid var(--second-color);
+}
