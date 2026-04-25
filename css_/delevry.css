@@ -1,0 +1,55 @@
+
+
+
+
+
+
+.features-container {
+  padding: 90px 5%;
+  display: flex;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: var(--white-color);
+  padding:2rem 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #00000044; 
+  min-width: 250px;
+  border-left: 4px solid transparent; 
+}
+
+
+.card-blue {
+  border-left: 4px solid var(--second-color);
+ 
+}
+
+.card-green {
+  border-left: 4px solid var(--green);
+}
+
+.icon-section {
+  margin-right: 15px;
+}
+
+.icon-section i {
+ font-size: 40px;
+ color: var(--second-color);
+}
+
+.text-section h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--second-color);
+}
+
+.text-section p {
+  margin: 5px 0 0;
+  font-size: 0.85rem;
+  color: #666;
+}
