@@ -2,6 +2,21 @@
 
 
 
+document.querySelectorAll('.dot').forEach(dot => {
+    dot.addEventListener('click', function() {
+        const newSrc = this.getAttribute('data-image');
+        const productCard = this.closest('.product-card');
+        const mainImg = productCard.querySelector('.main-product-img');
+        
+        if(newSrc) {
+            mainImg.src = newSrc;
+        }
+    });
+});
+
+
+
+
 // swiper Hom page 
 var swiper = new Swiper(".myHeroSwiper", {
   loop: true,
