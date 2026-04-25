@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+*{
+     font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+   
+    padding: 80px 5% 20px;
+    background: var(--white-color);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border-bottom: 2px solid var(--second-color);
+    padding-bottom: 40px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+/* Typography */
+.brand-name, .footer-title {
+    color: var(--second-color);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.description, .hours, .footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+/* Contact Info */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.icon-box {
+    background: var(--second-color);
+    color:var(--white-color);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Center Links */
+.shop-links {
+   
+    text-align: center;
+    border-left: 2px solid var(--second-color);
+    border-right: 2px solid var(--second-color);
+}
+
+.shop-links ul {
+    list-style: none;
+     margin-top: 30px;
+}
+
+.shop-links li {
+    margin-bottom: 10px;
+}
+
+.shop-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Newsletter & Subscribe */
+.subscribe-box {
+    display: flex;
+    border: 1px solid #0046be;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.subscribe-box input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+}
+
+.subscribe-box button {
+    background: var(--second-color);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Social & Payment */
+.social-payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    background: #0046be;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 10px;
+}
+
+.payment-methods img {
+    height: 30px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding-top: 20px;
+    color: var(--second-color);
+    font-style: italic;
+}
+
+.footer-bottom strong {
+    font-weight: 900;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .shop-links {
+        border-left: none;
+        border-right: none;
+        padding: 20px 0;
+    }
+    .subscribe-box {
+        max-width: 100%;
+    }
+}
