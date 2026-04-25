@@ -52,3 +52,61 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+
+
+
+
+
+
+const deskSwiper = new Swiper(".deskSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+
+  navigation: {
+    nextEl: ".desk-next",
+    prevEl: ".desk-prev",
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+
+    768: {
+      slidesPerView: 2
+    },
+
+    1024: {
+      slidesPerView: 4
+    }
+  }
+});
+
+
+
+
+const ControllerSwiper = new Swiper(".ControllerSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+
+  navigation: {
+    nextEl: ".Controller-next",
+    prevEl: ".Controller-prev",
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+
+    768: {
+      slidesPerView: 2
+    },
+
+    1024: {
+      slidesPerView: 4
+    }
+  }
+});

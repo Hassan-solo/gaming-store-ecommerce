@@ -504,6 +504,7 @@
 .collection-slider-wrapper {
     min-width: 0; 
     width: 100%;
+   
     
 }
 
@@ -514,6 +515,7 @@
     padding: 25px;
     border-radius: 4px;
     transition: 0.3s;
+    height: 100%;
 }
 
 .p-card:hover { 
@@ -638,9 +640,6 @@
 
 
 
-
-
-
 /* style section category  desk */
 
 .product-section {
@@ -665,8 +664,8 @@
 
 }
 
-.section-controls .btn-prev,
-.section-controls .btn-next{
+.section-controls button,
+.section-controls button{
    background-color: var(--second-color);
    padding: 8px;
    color: var(--white-color);
@@ -677,20 +676,42 @@
    
 }
 
-.section-controls .btn-prev i,
-.section-controls .btn-next i{
+.section-controls button i,
+.section-controls button i{
    font-size: 20px;
 }
 
 
 .product-section .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr);
+    gap: 20px; */
+    overflow: hidden;
 
+}
+
+.deskSwiper .swiper-wrapper ,
+.ControllerSwiper .swiper-wrapper{
+   display: flex;
+   align-items: stretch;
+}
+ 
+.deskSwiper .swiper-slide  ,
+.ControllerSwiper .swiper-slide{
+   height: auto;
 }
 
 
 .nj{
    border-bottom: 3px solid var(--second-color);
 }
+
+
+.PlayStation .product-grid ,
+.mous .product-grid ,
+.Ecran .product-grid{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+}
+
