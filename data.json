@@ -1,17 +1,39 @@
-{
-  "id": 102,
-  "brand": "Lenovo",
-  "name": "Lenovo LOQ 15IAX9E",
-  "full_title": "Lenovo LOQ 15IAX9E i5-12450HX/16GB DDR5/512GB SSD/RTX 2050 4GB/15.6\" 144Hz",
-  "price": 7499.00,
-  "currency": "DH",
-  "status": "In Stock",
-  "main_image": "assets/products/lenovo-loq-front.png",
-  "gallery": [
-    "assets/products/lenovo-loq-top.png",
-    "assets/products/lenovo-loq-open.png",
-    "assets/products/lenovo-loq-back.png",
-    "assets/products/lenovo-loq-side.png"
-  ],
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repudiandae cupiditate, minus, laborum reprehenderit veniam totam molestias expedita soluta quaerat, nulla cumque nam dicta! Cumque praesentium obcaecati et quos nostrum amet error in pariatur dolore ea dolorum eligendi officiis, aspernatur corporis perferendis ex esse labore quas. Vero voluptatem ut laboriosam."
-}
+[
+  {
+    "id": 1,
+    "brand": "SKILLCHAIRS",
+    "name": "Aurelia Series",
+    "full_title": "SKILLCHAIRS Aurelia",
+    "price": "1,499.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/chair/chair_home/chair-1.webp",
+    "gallery": [
+      "assets/chair/chair_home/chair-2.webp",
+      "assets/chair/chair_shop/shop_chair1.webp",
+      "assets/chair/chair_shop/shop_chair2.webp",
+      "assets/chair/chair_shop/shop_chair3.webp"
+    ],
+    "description": "The SKILLCHAIRS Aurelia Morocco stands out for its ability to offer superior comfort..."
+  },
+  {
+    "id": 2,
+    "brand": "SKILLCHAIRS",
+    "name": "Aurelia Series",
+    "full_title": "SKILLCHAIRS Aurelia",
+    "price": "1,499.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/chair/chair_home/chair-1.webp",
+    "gallery": [
+      "assets/chair/chair_home/chair-2.webp",
+      "assets/chair/chair_shop/shop_chair1.webp",
+      "assets/chair/chair_shop/shop_chair2.webp",
+      "assets/chair/chair_shop/shop_chair3.webp"
+    ],
+    "description": "The SKILLCHAIRS Aurelia Morocco stands out for its ability to offer superior comfort..."
+  }
+
+
+  
+]
