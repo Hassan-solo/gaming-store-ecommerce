@@ -1,239 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thech Shop - Product Details</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Thech Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css_/components/variables.css">
+    <link rel="stylesheet" href="css_/components/header.css">
 
-  <link rel="stylesheet" href="css_/components/header.css">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      display: flex;
-      justify-content: center;
-      padding: 40px;
-    }
+    <style>
+        :root {
+            --primary: #1a3fb5;
+            --bg-gray: #f8f9fa;
+        }
 
-    .product-card {
-      background: white;
-      max-width: 900px;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 30px;
-      padding: 20px;
-      border-radius: 8px;
-    }
+        body {
+            font-family: 'Inter', sans-serif;
+           
+            color: #333;
+        }
 
-    /* Gallery Styles */
-    .product-gallery {
-      display: flex;
-      gap: 15px;
-    }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+        }
 
-    .thumbnails {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+        .product-page {
+            display: grid;
+            grid-template-columns: 100px 1fr 1fr; /* Gallery | Main Image | Info */
+            gap: 30px;
+        }
 
-    .thumbnails img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-      cursor: pointer;
-      border: 1px solid #eee;
-    }
+        /* Gallery Column */
+        .thumb-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-    .main-image {
-      flex-grow: 1;
-      border: 2px solid #008cff;
-      /* L-khit l-zreq li f-tswira */
-      padding: 10px;
-      display: flex;
-      align-items: center;
-    }
+        .thumb-list img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            padding: 5px;
+            transition: 0.2s;
+        }
 
-    .main-image img {
-      width: 100%;
-      height: auto;
-    }
+        .thumb-list img:hover {
+            border-color: var(--primary);
+        }
 
-    /* Details Styles */
-    .product-details {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+        /* Main Image */
+        .main-view {
+            background: var(--bg-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            padding: 20px;
+        }
 
-    .product-title {
-      color: #0046be;
-      font-size: 1.4rem;
-      margin-bottom: 20px;
-      line-height: 1.3;
-    }
+        .main-view img {
+            max-width: 100%;
+            height: auto;
+        }
 
-    .brand-tag {
-      margin-bottom: 20px;
-      color: #888;
-    }
+        /* Info Column */
+        .product-info {
+            padding-left: 20px;
+        }
 
-    .badge {
-      background-color: #28a745;
-      color: white;
-      padding: 4px 12px;
-      border-radius: 4px;
-      margin-left: 10px;
-      font-weight: bold;
-    }
+        .brand-name {
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-    .price-container {
-      margin-bottom: 25px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
+        h1 {
+            font-size: 2.2rem;
+            margin: 10px 0;
+        }
 
-    .current-price {
-      color: #00b5cc;
-      font-size: 1.6rem;
-      font-weight: bold;
-    }
+        .desc {
+            color: #666;
+            line-height: 1.6;
+            margin: 25px 0;
+        }
 
-    .old-price {
-      color: #999;
-      text-decoration: line-through;
-      font-size: 1rem;
-    }
+        .price {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
 
-    .add-to-cart {
-      background-color: #0040cc;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-      width: fit-content;
-    }
+        .btn-cart {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px 45px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+        }
 
-    .add-to-cart:hover {
-      background-color: #0033aa;
-    }
-
-    /* Description (t-leht) */
-    .product-description {
-      grid-column: 1 / span 2;
-      margin-top: 20px;
-      line-height: 1.6;
-      color: #333;
-    }
-  </style>
+        @media (max-width: 900px) {
+            .product-page {
+                grid-template-columns: 1fr;
+            }
+            .thumb-list {
+                flex-direction: row;
+                order: 2;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-  <header>
-    <div class="nav-container">
-      <div class="logo"><i class="fas fa-shopping-cart"></i> Thech Shop</div>
-      <div class="search-bar">
-        <input type="text" placeholder="Search for products...">
+  <!-- Header -->
+  <header class="header">
+    <div class="top-header">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div>
+          <h1>Tech Shop</h1>
+        </div>
       </div>
-      <div class="icons">
-        <i class="fas fa-user"></i> &nbsp; <i class="fas fa-shopping-bag"></i>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search for latest tech, gaming gear..." />
+        <button>SEARCH</button>
+      </div>
+
+      <div class="header-actions">
+        <div class="account">
+          <span>Hello, Sign in</span>
+          <div class="account-link">
+            Account & Lists <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="cart" id="cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </div>
       </div>
     </div>
+
+    <nav class="navbar">
+      <div class="categories">
+        <i class="fas fa-bars"></i>
+        <span>Browse Categories</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="support">
+        <i class="fas fa-headset"></i>
+        <span>24/7 Support: +212 600 000 000</span>
+      </div>
+    </nav>
   </header>
+  <!-- End Header -->
 
+<div class="container">
+    <div id="loader">Loading product...</div>
+    
+    <div class="product-page" id="product-ui" style="display: none;">
+        <!-- Left Thumbnails -->
+        <div class="thumb-list" id="gallery"></div>
 
-  <div class="product-card">
-    <div class="product-gallery">
-      <div class="thumbnails">
-        <img src="thumb1.jpg" alt="Side view">
-        <img src="thumb2.jpg" alt="Front view">
-        <img src="thumb3.jpg" alt="Back view">
-        <img src="thumb4.jpg" alt="Thin profile">
-      </div>
-      <div class="main-image">
-        <img src="main-laptop.jpg" alt="Lenovo LOQ">
-      </div>
+        <!-- Middle Image -->
+        <div class="main-view">
+            <img src="" id="main-img" alt="Product Image">
+        </div>
+
+        <!-- Right Details -->
+        <div class="product-info">
+            <span class="brand-name" id="p-brand"></span>
+            <h1 id="p-name"></h1>
+            <p class="desc" id="p-desc"></p>
+            <div class="price" id="p-price"></div>
+            <button class="btn-cart">Add to card</button>
+        </div>
     </div>
+</div>
 
-    <div class="product-details">
-      <h2 class="product-title">Lenovo LOQ 15IAX9E i5-12450HX/16GB DDR5/512GB SSD/RTX 2050 4GB/15.6" 144Hz</h2>
+<script>
+    async function initProductPage() {
+        // 1. Get ID from URL (?id=1)
+        const params = new URLSearchParams(window.location.search);
+        const pid = params.get('id');
 
-      <div class="brand-tag">
-        <span>Brand</span>
-        <span class="badge">Lenovo</span>
-      </div>
+        try {
+            // 2. Fetch your data.json
+            const response = await fetch('data.json');
+            const data = await response.json();
 
-      <div class="price-container">
-        <span class="current-price">8,299.00 DH</span>
-        <span class="old-price">8,499.00 dh</span>
-      </div>
+            // 3. Find the specific chair
+            const product = data.find(item => item.id == pid);
 
-      <button class="add-to-cart">Add card</button>
-    </div>
-
-    <div class="product-description">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repudiandae cupiditate, minus, laborum
-        reprehenderit veniam totam molestias expedita soluta quaerat, nulla cumque nam dicta! Cumque praesentium
-        obcaecati et quos nostrum amet error in pariatur dolore ea dolorum eligendi officiis, aspernatur corporis
-        perferendis ex esse labore quas. Vero voluptatem ut laboriosam.</p>
-    </div>
-  </div>
-
-  <script src="data.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const pid = params.get('id') || "1"; // Default to ID 1
-
-    function setupPage() {
-      const p = productsData.find(item => item.id === pid);
-
-      if (p) {
-        // Info
-        document.getElementById('productTitle').innerText = p.name;
-        document.getElementById('brandTag').innerText = p.brand;
-        document.getElementById('currPrice').innerText = p.price;
-        document.getElementById('productDesc').innerText = p.description;
-        document.getElementById('mainImage').src = p.images[0];
-        if (p.oldPrice) document.getElementById('oldPrice').innerText = p.oldPrice;
-
-        // Thumbs Gallery
-        const thumbs = document.getElementById('thumbBox');
-        p.images.forEach((img, i) => {
-          const el = document.createElement('img');
-          el.src = img;
-          if (i === 0) el.className = 'active';
-          el.onclick = () => {
-            document.getElementById('mainImage').src = img;
-            document.querySelectorAll('.gallery-thumbs img').forEach(t => t.classList.remove('active'));
-            el.classList.add('active');
-          };
-          thumbs.appendChild(el);
-        });
-
-        // Featured Grid (Desktop 7 logic)
-        const grid = document.getElementById('featuredGrid');
-        productsData.forEach(item => {
-          if (item.id !== pid) {
-            grid.innerHTML += `
-                            <a href="shop.html?id=${item.id}" class="f-card">
-                                <img src="${item.images[0]}" alt="${item.name}">
-                                <h3>${item.name}</h3>
-                                <div class="f-price">${item.price}</div>
-                            </a>
-                        `;
-          }
-        });
-      }
+            if (product) {
+                displayProduct(product);
+            } else {
+                document.getElementById('loader').innerHTML = "<h2>Product not found.</h2>";
+            }
+        } catch (err) {
+            console.error("Fetch error:", err);
+            document.getElementById('loader').innerText = "Error loading data.";
+        }
     }
 
-    window.onload = setupPage;
-  </script>
-</body>
+    function displayProduct(p) {
+        // Hide loader, show UI
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('product-ui').style.display = 'grid';
 
+        // Fill Text
+        document.getElementById('p-brand').innerText = p.brand;
+        document.getElementById('p-name').innerText = p.name;
+        document.getElementById('p-desc').innerText = p.description;
+        document.getElementById('p-price').innerText = `${p.price} ${p.currency}`;
+        
+        // Main Image
+        const mainImg = document.getElementById('main-img');
+        mainImg.src = p.main_image;
+
+        // Gallery
+        const gallery = document.getElementById('gallery');
+        const images = [p.main_image, ...p.gallery];
+        
+        gallery.innerHTML = images.map(img => `
+            <img src="${img}" onclick="document.getElementById('main-img').src='${img}'">
+        `).join('');
+    }
+
+    // Run on load
+    initProductPage();
+</script>
+
+</body>
 </html>

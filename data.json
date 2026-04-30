@@ -14,26 +14,81 @@
       "assets/chair/chair_shop/shop_chair2.webp",
       "assets/chair/chair_shop/shop_chair3.webp"
     ],
-    "description": "The SKILLCHAIRS Aurelia Morocco stands out for its ability to offer superior comfort..."
+    "description": "The SKILLCHAIRS Aurelia Morocco stands out for its ability to offer superior comfort while bringing a touch of rare elegance to the world of gaming and office chairs . Designed to meet the expectations of users looking for a modern, comfortable, and durable ergonomic chair, it has become a benchmark for gamers, remote workers, and professionals in Morocco."
   },
   {
     "id": 2,
-    "brand": "SKILLCHAIRS",
-    "name": "Aurelia Series",
+    "brand": "RAZER",
+    "name": "Razer Iskur V2 X Black",
     "full_title": "SKILLCHAIRS Aurelia",
-    "price": "1,499.00",
+    "price": "3,499.00",
     "currency": "DH",
     "status": "In Stock",
-    "main_image": "assets/chair/chair_home/chair-1.webp",
+    "main_image": "assets/chair/chair_home/chair-3.webp",
     "gallery": [
-      "assets/chair/chair_home/chair-2.webp",
-      "assets/chair/chair_shop/shop_chair1.webp",
-      "assets/chair/chair_shop/shop_chair2.webp",
-      "assets/chair/chair_shop/shop_chair3.webp"
+      "assets/chair/chair_home/chair-4.webp",
+      "assets/chair/chair_shop/shop_chair4.webp",
+      "assets/chair/chair_shop/shop_chair5.webp"
     ],
-    "description": "The SKILLCHAIRS Aurelia Morocco stands out for its ability to offer superior comfort..."
+    "description": "The Razer Iskur V2 X Black Morocco perfectly embodies the Razer brand spirit, combining elegance and functionality. Its timeless black color gives it a sleek and professional look, equally at home in a gaming setup or a modern workspace. Built with a reinforced steel frame and high-quality materials, this chair is designed for durability, even with intensive use. Thanks to its ergonomic design and durable upholstery, the Iskur V2 X Black offers comfortable seating while ensuring optimal stability for long gaming or work sessions."
+  },
+
+  {
+    "id": 3,
+    "brand": "RAZER",
+    "name": "Razer Iskur V2 X Black",
+    "full_title": "SKILLCHAIRS Aurelia",
+    "price": "3,499.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/chair/chair_home/chair-5.webp",
+    "gallery": [
+      "assets/chair/chair_home/chair-6.webp",
+      "assets/chair/chair_shop/shop_chair6.webp",
+      "assets/chair/chair_shop/shop_chair7.webp"
+    ],
+    "description": "The Razer Iskur V2 X Black Morocco perfectly embodies the Razer brand spirit, combining elegance and functionality. Its timeless black color gives it a sleek and professional look, equally at home in a gaming setup or a modern workspace. Built with a reinforced steel frame and high-quality materials, this chair is designed for durability, even with intensive use. Thanks to its ergonomic design and durable upholstery, the Iskur V2 X Black offers comfortable seating while ensuring optimal stability for long gaming or work sessions."
+  },
+  {
+    "id": 4,
+    "brand": "RAZER",
+    "name": "Hybrok Destinity - The gaming chair designed for performance and long-lasting comfort",
+    "full_title": "SKILLCHAIRS Aurelia",
+    "price": "2,199.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/chair/chair_home/chair-7.webp",
+    "gallery": [
+      "assets/chair/chair_home/chair-8.webp",
+      "assets/chair/chair_shop/shop_chair8.webp",
+      "assets/chair/chair_shop/shop_chair9.webp"
+    ],
+    "description": "The Hybrok Destinity Morocco stands out as a modern gaming chair designed to meet the needs of demanding gamers, streamers, and professionals who spend long hours in front of their setups. Combining a bold design, advanced ergonomics, and robust materials, it offers a balanced seating experience that combines comfort, support, and style, while seamlessly integrating into a high-end gaming or office environment."
+  },
+  {
+    "id": 5,
+    "brand": "HYBROK",
+    "name": "Hybrok Fighter: the gaming chair designed for intensity and control",
+    "full_title": "SKILLCHAIRS Aurelia",
+    "price": "2,199.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/chair/chair_home/chair_9.webp",
+    "gallery": [
+      "assets/chair/chair_home/chair-10.webp",
+      "assets/chair/chair_shop/shop_chair10.webp",
+      "assets/chair/chair_shop/shop_chair11.webp"
+    ],
+    "description": "The Hybrok Fighter Morocco is designed for passionate gamers and demanding users who want a gaming chair capable of keeping up with even the most intense gaming sessions. Inspired by the world of competitive gaming and esports, it combines a bold design, carefully considered ergonomics, and a robust build. Designed for long-lasting comfort, the Fighter transforms every hour spent in front of the screen into a more stable, immersive, and high-performance experience."
   }
 
 
+
+
   
+
+
+
+
+
 ]

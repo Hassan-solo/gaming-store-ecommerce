@@ -1,5 +1,7 @@
 
-
+a{
+     text-decoration: none;
+}
 
 .p-card {
     background: var(--white-color);
