@@ -1,253 +1,298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Details - Thech Shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css_/components/variables.css">
-    <link rel="stylesheet" href="css_/components/header.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css_/components/variables.css" />
+    <link rel="stylesheet" href="css_/components/header.css" />
 
     <style>
-        :root {
-            --primary: #1a3fb5;
-            --bg-gray: #f8f9fa;
-        }
+      :root {
+        --primary: #1a3fb5;
+        --bg-gray: #f8f9fa;
+      }
 
-        body {
-            font-family: 'Inter', sans-serif;
-           
-            color: #333;
-        }
+      body {
+        font-family: "Inter", sans-serif;
 
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-        }
+        color: #333;
+      }
 
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+      }
+
+      .product-page {
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr; /* Gallery | Main Image | Info */
+        gap: 30px;
+      }
+
+      /* Gallery Column */
+      .thumb-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .thumb-list img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        padding: 5px;
+        transition: 0.2s;
+      }
+
+      .thumb-list img:hover {
+        border-color: var(--primary);
+      }
+
+      /* Main Image */
+      .main-view {
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        padding: 20px;
+      }
+
+      .main-view img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Info Column */
+      .product-info {
+        padding-left: 20px;
+      }
+
+      .brand-name {
+        color: var(--primary);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        margin: 10px 0;
+      }
+
+      .desc {
+        color: #666;
+        line-height: 1.6;
+        margin: 25px 0;
+      }
+
+      .price {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-bottom: 30px;
+      }
+
+      .btn-cart {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 15px 45px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      @media (max-width: 900px) {
         .product-page {
-            display: grid;
-            grid-template-columns: 100px 1fr 1fr; /* Gallery | Main Image | Info */
-            gap: 30px;
+          grid-template-columns: 1fr;
         }
-
-        /* Gallery Column */
         .thumb-list {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+          flex-direction: row;
+          order: 2;
         }
-
-        .thumb-list img {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-            border: 1px solid #ddd;
-            cursor: pointer;
-            padding: 5px;
-            transition: 0.2s;
-        }
-
-        .thumb-list img:hover {
-            border-color: var(--primary);
-        }
-
-        /* Main Image */
-        .main-view {
-            background: var(--bg-gray);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 12px;
-            padding: 20px;
-        }
-
-        .main-view img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Info Column */
-        .product-info {
-            padding-left: 20px;
-        }
-
-        .brand-name {
-            color: var(--primary);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            margin: 10px 0;
-        }
-
-        .desc {
-            color: #666;
-            line-height: 1.6;
-            margin: 25px 0;
-        }
-
-        .price {
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 30px;
-        }
-
-        .btn-cart {
-            background: var(--primary);
-            color: white;
-            border: none;
-            padding: 15px 45px;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 900px) {
-            .product-page {
-                grid-template-columns: 1fr;
-            }
-            .thumb-list {
-                flex-direction: row;
-                order: 2;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="top-header">
-      <div class="logo">
-        <div class="logo-icon">
-          <i class="fas fa-shopping-cart"></i>
-        </div>
-        <div>
-          <h1>Tech Shop</h1>
-        </div>
-      </div>
-
-      <div class="search-box">
-        <input type="text" placeholder="Search for latest tech, gaming gear..." />
-        <button>SEARCH</button>
-      </div>
-
-      <div class="header-actions">
-        <div class="account">
-          <span>Hello, Sign in</span>
-          <div class="account-link">
-            Account & Lists <i class="fas fa-chevron-down"></i>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="top-header">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div>
+            <h1>Tech Shop</h1>
           </div>
         </div>
 
-        <div class="cart" id="cart">
-          <i class="fas fa-shopping-bag"></i>
-          <span class="cart-badge" id="cart-badge">0</span>
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Search for latest tech, gaming gear..."
+          />
+          <button>SEARCH</button>
+        </div>
+
+        <div class="header-actions">
+          <div class="account">
+            <span>Hello, Sign in</span>
+            <div class="account-link">
+              Account & Lists <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <div class="cart" id="cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-badge" id="cart-badge">0</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <nav class="navbar">
-      <div class="categories">
-        <i class="fas fa-bars"></i>
-        <span>Browse Categories</span>
-      </div>
+      <nav class="navbar">
+        <div class="categories">
+          <i class="fas fa-bars"></i>
+          <span>Browse Categories</span>
+        </div>
 
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Deals</a>
-        <a href="#">Contact</a>
-      </div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Deals</a>
+          <a href="#">Contact</a>
+        </div>
 
-      <div class="support">
-        <i class="fas fa-headset"></i>
-        <span>24/7 Support: +212 600 000 000</span>
-      </div>
-    </nav>
-  </header>
-  <!-- End Header -->
+        <div class="support">
+          <i class="fas fa-headset"></i>
+          <span>24/7 Support: +212 600 000 000</span>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
 
-<div class="container">
-    <div id="loader">Loading product...</div>
-    
-    <div class="product-page" id="product-ui" style="display: none;">
+    <div class="container">
+      <div id="loader">Loading product...</div>
+
+      <div class="product-page" id="product-ui" style="display: none">
         <!-- Left Thumbnails -->
         <div class="thumb-list" id="gallery"></div>
 
         <!-- Middle Image -->
         <div class="main-view">
-            <img src="" id="main-img" alt="Product Image">
+          <img src="" id="main-img" alt="Product Image" />
         </div>
 
         <!-- Right Details -->
         <div class="product-info">
-            <span class="brand-name" id="p-brand"></span>
-            <h1 id="p-name"></h1>
-            <p class="desc" id="p-desc"></p>
-            <div class="price" id="p-price"></div>
-            <button class="btn-cart">Add to card</button>
+          <span class="brand-name" id="p-brand"></span>
+          <h1 id="p-name"></h1>
+          <p class="desc" id="p-desc"></p>
+          <div class="price" id="p-price"></div>
+          <button class="btn-cart">Add to card</button>
         </div>
+      </div>
     </div>
-</div>
 
-<script>
-    async function initProductPage() {
-        // 1. Get ID from URL (?id=1)
+    <script>
+
+      const loader = document.getElementById("loader");
+      const productUI = document.getElementById("product-ui");
+      const mainImg = document.getElementById("main-img");
+      const gallery = document.getElementById("gallery");
+
+      // 🔹 Fetch products (easy to replace with PHP later)
+      async function getProducts() {
+        const res = await fetch("data.json");
+        return await res.json();
+      }
+
+      // 🔹 Init page
+      async function initProductPage() {
         const params = new URLSearchParams(window.location.search);
-        const pid = params.get('id');
+        const pid = params.get("id");
+
+        // check id
+        if (!pid) {
+          loader.innerHTML = "<h2>Invalid product ID</h2>";
+          return;
+        }
 
         try {
-            // 2. Fetch your data.json
-            const response = await fetch('data.json');
-            const data = await response.json();
+          const data = await getProducts();
+          const product = data.find((p) => p.id == pid);
 
-            // 3. Find the specific chair
-            const product = data.find(item => item.id == pid);
+          if (!product) {
+            loader.innerHTML = "<h2>Product not found</h2>";
+            return;
+          }
 
-            if (product) {
-                displayProduct(product);
-            } else {
-                document.getElementById('loader').innerHTML = "<h2>Product not found.</h2>";
-            }
+          displayProduct(product);
         } catch (err) {
-            console.error("Fetch error:", err);
-            document.getElementById('loader').innerText = "Error loading data.";
+          console.error(err);
+          loader.innerHTML = "<h2>Error loading product</h2>";
         }
-    }
+      }
 
-    function displayProduct(p) {
-        // Hide loader, show UI
-        document.getElementById('loader').style.display = 'none';
-        document.getElementById('product-ui').style.display = 'grid';
+      // 🔹 Display product
+      function displayProduct(p) {
+        loader.style.display = "none";
+        productUI.style.display = "grid";
 
-        // Fill Text
-        document.getElementById('p-brand').innerText = p.brand;
-        document.getElementById('p-name').innerText = p.name;
-        document.getElementById('p-desc').innerText = p.description;
-        document.getElementById('p-price').innerText = `${p.price} ${p.currency}`;
-        
-        // Main Image
-        const mainImg = document.getElementById('main-img');
+        // text
+        document.getElementById("p-brand").innerText = p.brand;
+        document.getElementById("p-name").innerText = p.name;
+        document.getElementById("p-desc").innerText = p.description;
+        document.getElementById("p-price").innerText =
+          `${p.price} ${p.currency}`;
+
+        // main image
         mainImg.src = p.main_image;
 
-        // Gallery
-        const gallery = document.getElementById('gallery');
+        // gallery
         const images = [p.main_image, ...p.gallery];
-        
-        gallery.innerHTML = images.map(img => `
-            <img src="${img}" onclick="document.getElementById('main-img').src='${img}'">
-        `).join('');
-    }
 
-    // Run on load
-    initProductPage();
-</script>
+        gallery.innerHTML = images
+          .map(
+            (img) => `
+        <img src="${img}" class="thumb">
+    `,
+          )
+          .join("");
 
-</body>
+        // click change image
+        document.querySelectorAll(".thumb").forEach((img) => {
+          img.addEventListener("click", () => {
+            mainImg.src = img.src;
+          });
+        });
+
+        // add to cart (simple version)
+        document.querySelector(".btn-cart").addEventListener("click", () => {
+          addToCart(p);
+        });
+      }
+
+      // 🔹 Cart (localStorage)
+      function addToCart(product) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        cart.push(product);
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert("Product added to cart 🛒");
+      }
+
+      // 🔹 Run
+      initProductPage();
+    </script>
+  </body>
 </html>
