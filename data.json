@@ -268,22 +268,76 @@
     "description": "Ergonomic comfort for extended play sessions The Blue PS5 DualSense Cobalt Controller is designed with attention to detail to provide exceptional ergonomic comfort, allowing you to play for hours without fatigue."
   }
 
+   ,
+   {
+    "id": 17,
+    "brand": "SONY",
+    "name": "Sony PlayStation 5 Slim Digital Edition Fortnite Cobalt Star Bundle",
+    "full_title":"Sony PlayStation 5 Slim Digital Edition Fortnite Cobalt Star Bundle: The ultimate gaming experience in Morocco",
+    "price": "5,490.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/PlayStation/playStation_home/PlayStation-1.webp",
+    "gallery": [
+      "assets/products/PlayStation/playStation_home/PlayStation-2.webp"
+    ],
+    "description": "Discover the NouveautéSony PlayStation 5 Slim Digital Edition Fortnite Cobalt Star Bundle, a compact and powerful version of the console, with exclusive Fortnite content. Whether you are a fan of high-performance gaming or relaxing parties, this pack is designed to revolutionize your gaming experience."
+  }
+
+   ,
+   {
+    "id": 18,
+    "brand": "SONY",
+    "name": "Sony PlayStation 5 Slim + 2nd Controller DualSense",
+    "full_title":"Sony PlayStation 5 Slim + 2nd Controller DualSense - The Next-Gen Experience to Share",
+    "price": "6,999.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/PlayStation/playStation_home/PlayStation-3.webp",
+    "gallery": [
+      "assets/products/PlayStation/playStation_home/PlayStation-4.webp"
+    ],
+    "description": "The Sony PlayStation 5 Slim Morocco is the stylish and modern answer to anyone looking for the power of the PS5 in a thinner, lighter, and more modern interior format. Without sacrificing the performance of the original console, this Slim version embodies a smart technological evolution, designed to fit perfectly into your living room. With this exclusive pack featuring a second DualSense controller, you’re ready to dive into the immersive world of next-gen. Whether for FIFA matches, battles in Mortal Kombat or cooperative sessions on It Takes Two, this offer is ideal for families, flatshares or local multiplayer enthusiasts."
+  }
+
+  ,
+   {
+    "id": 19,
+    "brand": "SONY",
+    "name": "Sony PlayStation 4 Slim (500 Go)",
+    "full_title":"Sony PlayStation 4 Slim (500 GB) in Morocco: The ultimate game console for everyone",
+    "price": "3,299.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/PlayStation/playStation_home/PlayStation-5.webp",
+    "gallery": [
+      "assets/products/PlayStation/playStation_home/PlayStation-6.webp"
+    ],
+    "description": "The Sony PlayStation 4 Slim (500 GB) is an iconic gaming console that continues to captivate video game enthusiasts from around the world. With its elegant design, exceptional performance and extensive gaming catalog, it is an ideal choice for gamers in Morocco. Discover why the PS4 Slim remains an essential reference."
+  }
+
+  ,
+   {
+    "id": 20,
+    "brand": "SONY",
+    "name": "Sony PlayStation 5 Slim Digital Edition + 2nd controller DualSense",
+    "full_title":"Discover the Sony PlayStation 5 Slim Digital Edition with a 2nd DualSense controller in Morocco",
+    "price": "6,599.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/PlayStation/playStation_home/PlayStation-7.webp",
+    "gallery": [
+      "assets/products/PlayStation/playStation_home/PlayStation-8.webp",
+      "assets/products/PlayStation/playStation_shop/shop_desk18.webp"
+
+    ],
+    "description": "The Sony PlayStation 5 Slim Digital Edition represents a major breakthrough in the world of game consoles. Offering Moroccan players an immersive experience with breathtaking graphics and improved performance, this console is intended to redefine video games. Accompanied by a second DualSense controller, it promises unforgettable shared game moments."
+  }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-  
 
 
 
