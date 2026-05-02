@@ -80,8 +80,7 @@
       "assets/chair/chair_shop/shop_chair11.webp"
     ],
     "description": "The Hybrok Fighter Morocco is designed for passionate gamers and demanding users who want a gaming chair capable of keeping up with even the most intense gaming sessions. Inspired by the world of competitive gaming and esports, it combines a bold design, carefully considered ergonomics, and a robust build. Designed for long-lasting comfort, the Fighter transforms every hour spent in front of the screen into a more stable, immersive, and high-performance experience."
-  }
-  ,
+  },
   {
     "id": 6,
     "brand": "SKILLDESK",
@@ -97,8 +96,7 @@
       "assets/products/desk/desk_shop/shop_desk2.webp"
     ],
     "description": "The SKILLDESK NEXUS Morocco is more than just a desk; it's a complete workstation designed to meet the needs of demanding gamers, content creators, and professionals. Combining futuristic design, robustness, and intelligent features, it redefines how you interact with your workspace or gaming environment. With its premium design and durable materials, the NEXUS is the ideal choice for anyone seeking ergonomics, productivity, and long-term comfort."
-  }
-  ,
+  },
   {
     "id": 7,
     "brand": "SKILLDESK",
@@ -114,9 +112,7 @@
       "assets/products/desk/desk_shop/shop_desk4.webp"
     ],
     "description": "The SKILLDESK WARZONE 140 Morocco is designed to meet the demands of modern gamers, streamers, and professionals looking for a spacious, robust, and stylish manually adjustable gaming desk. Built to accommodate even the most ambitious setups, this gaming desk combines sturdiness, ergonomics, and premium design to deliver an exceptional gaming and work experience. Thanks to its optimized design, it stands out as an ideal solution for creating a high-performance and organized workspace."
-  }
-  
-  ,
+  },
   {
     "id": 8,
     "brand": "SKILLDESK",
@@ -132,9 +128,7 @@
       "assets/products/desk/desk_shop/shop_desk7webp.webp"
     ],
     "description": "The SKILLDESK BLACK FLAG (Motorized) Morocco is a gaming desk designed for video game enthusiasts and professionals seeking an optimized workstation. This desk combines ergonomics, robustness, and modern design, creating a gaming space perfectly suited to the needs of Moroccan gamers. Whether you're a casual player or a seasoned competitor, the SKILLDESK BLACK FLAG offers all the necessary features to enhance your gaming experience."
-  }
-
-  ,
+  },
   {
     "id": 9,
     "brand": "SKILLDESK",
@@ -149,8 +143,7 @@
       "assets/products/desk/desk_shop/shop_desk8webp.webp"
     ],
     "description": "The SKILLDESK COCKPIT 180 Morocco is a high-end gaming desk designed for passionate gamers, streamers, and professionals who demand a spacious, robust, and perfectly optimized workspace. With its size, solid construction, and design inspired by gaming cockpits, this gaming desk offers an ideal platform for powerful setups.."
-  }
- ,
+  },
   {
     "id": 10,
     "brand": "PLAYER-AZ1",
@@ -166,8 +159,8 @@
       "assets/products/desk/desk_shop/shop_desk10.webp"
     ],
     "description": "The 1st Player AZ1 Table Gaming is designed to meet the needs of the most demanding players in Morocco. This gaming desktop combines ergonomic design, robustness and features adapted to long gaming sessions, thus providing an optimal user experience. Whether you are a professional player or a passionate amateur, this gaming table turns your space into an efficient and stylish gaming environment."
-  } ,
-    {
+  },
+  {
     "id": 11,
     "brand": "GAMESIR",
     "name": "GameSir T4 Pro Wireless Controller (Black)",
@@ -181,10 +174,8 @@
       "assets/products/gamesir/gamesir_shop/shop_desk11.webp"
     ],
     "description": "At a time when video games are practiced on several media, the GameSir T4 Pro Wireless Controller (Black) is a must-have solution. Whether you’re a player on PC, Android or iOS, this wireless controller is designed to fit all your needs. With its transparent black backlit design RGB, its 6-axis gyroscope, its asymmetrical vibrations, and its configurable Turbo mode, it is quickly becoming an essential for those who want to take it to the next level."
-  }
-
-   ,
-    {
+  },
+  {
     "id": 12,
     "brand": "GAMESIR",
     "name": "GameSir G8 Galileo Type-C Mobile Gaming Controller",
@@ -195,18 +186,16 @@
     "main_image": "assets/products/gamesir/gamesir_home/Controller-7.webp",
     "gallery": [
       "assets/products/gamesir/gamesir_home/Controller-8.webp",
-      "assets/products/gamesir/gamesir_shop/shop_desk12.webp", 
+      "assets/products/gamesir/gamesir_shop/shop_desk12.webp",
       "assets/products/gamesir/gamesir_shop/shop_desk13.webp"
     ],
     "description": "In a world where mobile gaming is growing, the GameSir G8 Galileo Type-C Mobile Gaming Controller is establishing itself as a technological revolution designed for the most demanding players. Featuring console ergonomics, universal compatibility with Android smartphones in USB-C, and smart modular design, this controller turns your phone into a true portable console. Whether you’re a fan of competitive FPS, solo adventures or immersive racing games, the GameSir G8 Galileo is redefining next-generation mobile gaming standards."
-  }
-
-   ,
-    {
+  },
+  {
     "id": 13,
     "brand": "GAMESIR",
     "name": "GameSir SuperNova T4n Pro Wireless Controller (Rose)",
-    "full_title":"GameSir SuperNova T4n Pro Wireless Controller (Rose): the stylish and powerful wireless gaming controller in Morocco",
+    "full_title": "GameSir SuperNova T4n Pro Wireless Controller (Rose): the stylish and powerful wireless gaming controller in Morocco",
     "price": " 549.00",
     "currency": "DH",
     "status": "In Stock",
@@ -216,14 +205,12 @@
       "assets/products/gamesir/gamesir_shop/shop_desk14.webp"
     ],
     "description": "The GameSir SuperNova T4n Pro Wireless Controller (Rose) Morocco is a gaming controller that perfectly combines modern design, advanced performance and comfort of use. With its elegant and trendy pink color, it is aimed at gamers in Morocco who are looking for both style and efficiency. This wireless controller ensures a smooth, accurate and immersive experience."
-  }
-
-     ,
-    {
+  },
+  {
     "id": 14,
     "brand": "NINTEND",
     "name": "Nintendo GLOW Wired Controller & Travel Case Bundle",
-    "full_title":"Bundle Nintendo GLOW wired controller & travel case: a perfect combo for gamers in Morocco",
+    "full_title": "Bundle Nintendo GLOW wired controller & travel case: a perfect combo for gamers in Morocco",
     "price": " 549.00",
     "currency": "DH",
     "status": "In Stock",
@@ -233,13 +220,12 @@
       "assets/products/gamesir/gamesir_shop/shop_desk15.webp"
     ],
     "description": "The Nintendo GLOW Wired Controller & Travel Case Bundle is the perfect choice for players who are looking for style, performance and convenience. With its bright and ergonomic design, this wired controller offers an immersive gaming experience, while its robust travel case allows it to be transported easily and safely. Available in Morocco, this bundle is designed for Nintendo Switch enthusiasts."
-  } 
-  ,
-   {
+  },
+  {
     "id": 15,
     "brand": "SONY",
     "name": "Manette Sony DualSense V2 PS5 (Blanc)",
-    "full_title":"Explore the Sony DualSense V2 white controller in Morocco",
+    "full_title": "Explore the Sony DualSense V2 white controller in Morocco",
     "price": "  949.00",
     "currency": "DH",
     "status": "In Stock",
@@ -249,14 +235,12 @@
       "assets/products/gamesir/gamesir_shop/shop_desk16.webp"
     ],
     "description": "The Sony DualSense V2 White controller revolutionizes the gaming experience with its innovative design and advanced features. Designed for demanding players, this controller offers unprecedented immersion thanks to its haptic capabilities and adaptive tactile feedback, available exclusively in Morocco for PlayStation enthusiasts."
-  }
-
-  ,
-   {
+  },
+  {
     "id": 16,
     "brand": "SONY",
     "name": "Sony DualSense Controller (Blue Cobalt)",
-    "full_title":"Explore the Sony DualSense Cobalt Blue controller for an innovative gaming experience in Morocco",
+    "full_title": "Explore the Sony DualSense Cobalt Blue controller for an innovative gaming experience in Morocco",
     "price": "899.00",
     "currency": "DH",
     "status": "In Stock",
@@ -266,14 +250,12 @@
       "assets/products/gamesir/gamesir_shop/shop_desk17.webp"
     ],
     "description": "Ergonomic comfort for extended play sessions The Blue PS5 DualSense Cobalt Controller is designed with attention to detail to provide exceptional ergonomic comfort, allowing you to play for hours without fatigue."
-  }
-
-   ,
-   {
+  },
+  {
     "id": 17,
     "brand": "SONY",
     "name": "Sony PlayStation 5 Slim Digital Edition Fortnite Cobalt Star Bundle",
-    "full_title":"Sony PlayStation 5 Slim Digital Edition Fortnite Cobalt Star Bundle: The ultimate gaming experience in Morocco",
+    "full_title": "Sony PlayStation 5 Slim Digital Edition Fortnite Cobalt Star Bundle: The ultimate gaming experience in Morocco",
     "price": "5,490.00",
     "currency": "DH",
     "status": "In Stock",
@@ -282,14 +264,12 @@
       "assets/products/PlayStation/playStation_home/PlayStation-2.webp"
     ],
     "description": "Discover the NouveautéSony PlayStation 5 Slim Digital Edition Fortnite Cobalt Star Bundle, a compact and powerful version of the console, with exclusive Fortnite content. Whether you are a fan of high-performance gaming or relaxing parties, this pack is designed to revolutionize your gaming experience."
-  }
-
-   ,
-   {
+  },
+  {
     "id": 18,
     "brand": "SONY",
     "name": "Sony PlayStation 5 Slim + 2nd Controller DualSense",
-    "full_title":"Sony PlayStation 5 Slim + 2nd Controller DualSense - The Next-Gen Experience to Share",
+    "full_title": "Sony PlayStation 5 Slim + 2nd Controller DualSense - The Next-Gen Experience to Share",
     "price": "6,999.00",
     "currency": "DH",
     "status": "In Stock",
@@ -298,14 +278,12 @@
       "assets/products/PlayStation/playStation_home/PlayStation-4.webp"
     ],
     "description": "The Sony PlayStation 5 Slim Morocco is the stylish and modern answer to anyone looking for the power of the PS5 in a thinner, lighter, and more modern interior format. Without sacrificing the performance of the original console, this Slim version embodies a smart technological evolution, designed to fit perfectly into your living room. With this exclusive pack featuring a second DualSense controller, you’re ready to dive into the immersive world of next-gen. Whether for FIFA matches, battles in Mortal Kombat or cooperative sessions on It Takes Two, this offer is ideal for families, flatshares or local multiplayer enthusiasts."
-  }
-
-  ,
-   {
+  },
+  {
     "id": 19,
     "brand": "SONY",
     "name": "Sony PlayStation 4 Slim (500 Go)",
-    "full_title":"Sony PlayStation 4 Slim (500 GB) in Morocco: The ultimate game console for everyone",
+    "full_title": "Sony PlayStation 4 Slim (500 GB) in Morocco: The ultimate game console for everyone",
     "price": "3,299.00",
     "currency": "DH",
     "status": "In Stock",
@@ -314,14 +292,12 @@
       "assets/products/PlayStation/playStation_home/PlayStation-6.webp"
     ],
     "description": "The Sony PlayStation 4 Slim (500 GB) is an iconic gaming console that continues to captivate video game enthusiasts from around the world. With its elegant design, exceptional performance and extensive gaming catalog, it is an ideal choice for gamers in Morocco. Discover why the PS4 Slim remains an essential reference."
-  }
-
-  ,
-   {
+  },
+  {
     "id": 20,
     "brand": "SONY",
     "name": "Sony PlayStation 5 Slim Digital Edition + 2nd controller DualSense",
-    "full_title":"Discover the Sony PlayStation 5 Slim Digital Edition with a 2nd DualSense controller in Morocco",
+    "full_title": "Discover the Sony PlayStation 5 Slim Digital Edition with a 2nd DualSense controller in Morocco",
     "price": "6,599.00",
     "currency": "DH",
     "status": "In Stock",
@@ -329,18 +305,67 @@
     "gallery": [
       "assets/products/PlayStation/playStation_home/PlayStation-8.webp",
       "assets/products/PlayStation/playStation_shop/shop_desk18.webp"
-
     ],
     "description": "The Sony PlayStation 5 Slim Digital Edition represents a major breakthrough in the world of game consoles. Offering Moroccan players an immersive experience with breathtaking graphics and improved performance, this console is intended to redefine video games. Accompanied by a second DualSense controller, it promises unforgettable shared game moments."
+  },
+  {
+    "id": 21,
+    "brand": "LOGITECH",
+    "name": "Logitech G502 Hero RGB",
+    "full_title": "Explore accuracy with the Logitech G502 Hero RGB in Morocco",
+    "price": "449.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/mous/mous_home/Souris-4.webp",
+    "gallery": [
+      "assets/products/mous/mous_home/Souris-5.webp",
+      "assets/products/mous/mous_shop/shop_desk19.webp"
+    ],
+    "description": "Immerse yourself in the world of advanced gaming with the Logitech G502 Hero RGB gaming mouse, a choice popular with Moroccan gamers for its unparalleled precision and customizable design.."
+  },
+  {
+    "id": 22,
+    "brand": "RAZER",
+    "name": "Razer Basilisk v3",
+    "full_title": "Mouse Razer Basilisk V3 Morocco – Absolute control, performance and comfort",
+    "price": "449.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/mous/mous_home/Souris-6.webp",
+    "gallery": [
+      "assets/products/mous/mous_home/Souris-7.webp",
+      "assets/products/mous/mous_shop/shop_desk20.webp"
+    ],
+    "description": "The Souris Razer Basilisk V3 Morocco is an ideal solution for Moroccan gamers looking for precision, ergonomics and customization. Featuring a Focus+ optical sensor of 26,000 DPI, 11 programmable buttons and immersive 11-zone RGB lighting, this wired mouse transforms the way you play. In other words, it combines power and comfort for total domination."
+  },
+  {
+    "id": 23,
+    "brand": "REDRAGON",
+    "name": "Redragon M916AK PRO 1K Wireless",
+    "full_title": "Redragon M916AK PRO 1K Wireless: the next-generation wireless gaming mouse",
+    "price": "319.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/mous/mous_home/Souris-8.webp",
+    "gallery": [
+      "assets/products/mous/mous_home/Souris-9.webp",
+      "assets/products/mous/mous_shop/shop_desk21.webp"
+    ],
+    "description": "The Redragon M916AK PRO Morocco is an essential choice for players looking for a perfect balance between performance and freedom. Thanks to its ultra-fast 1K wireless connectivity, this mouse offers a smooth and responsive gaming experience, without the slightest latency. Its ergonomic design naturally matches the shape of the hand, guaranteeing optimal comfort even during long, intense play sessions. In addition to its robustness, its lightweight but strong chassis allows to maintain excellent maneuverability, ideal for competitive games where every millisecond counts."
+  },
+  {
+    "id": 24,
+    "brand": "LOGITECH",
+    "name": "Logitech G G502X White",
+    "full_title": "Logitech G G502X White Morocco: The Power of Gaming in a Stylish Design",
+    "price": "569.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/mous/mous_home/Souris-10.webp",
+    "gallery": [
+      "assets/products/mous/mous_home/Souris-11webp.webp",
+      "assets/products/mous/mous_shop/shop_desk22.webp"
+    ],
+    "description": "The Logitech G G502X White impresses with its elegant and ergonomic design. Rubber side grips ensure a comfortable grip, while programmable buttons offer total customization to fit your playing style."
   }
-
-
-
-
-
-
-
-
-
-
 ]
