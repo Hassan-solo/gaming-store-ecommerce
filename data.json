@@ -367,5 +367,79 @@
       "assets/products/mous/mous_shop/shop_desk22.webp"
     ],
     "description": "The Logitech G G502X White impresses with its elegant and ergonomic design. Rubber side grips ensure a comfortable grip, while programmable buttons offer total customization to fit your playing style."
+  },
+   {
+    "id": 25,
+    "brand": "XTRMLAB",
+    "name": "XTRMLAB X27G14IFF 27' 144Hz IPS",
+    "full_title": "XTRMLAB X27G14IFF 27' 144Hz IPS - Fluidity and precision on large screen",
+    "price": "999.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/ecran/ecran_home/ecarn-1.webp",
+    "gallery": [
+      "assets/products/ecran/ecran_home/ecarn-2.webp",
+      "assets/products/ecran/ecran_shop/shop_desk23.webp",
+      "assets/products/ecran/ecran_shop/shop_desk24.webp"
+    ],
+    "description": "The XTRMLAB X27G14IFF 27' 144Hz IPS Morocco embodies the perfect combination of visual performance, extreme fluidity and modern design. Designed to deliver an immersive gaming and work experience, this 27-inch monitor delivers clear, accurate and seamless images with 144 Hz refresh rates and IPS Full HD slab."
   }
+
+  ,
+   {
+    "id": 26,
+    "brand": "XTRMLAB",
+    "name": "XTRMLAB XK25G24IFF 24.5' 240Hz Fast IPS",
+    "full_title": "XTRMLAB XK25G24IFF 24.5' 240Hz Fast IPS - The ultra-reactive monitor designed for competitive players",
+    "price": "1,099.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/ecran/ecran_home/ecarn-3.webp",
+    "gallery": [
+      "assets/products/ecran/ecran_home/ecran-4.webp",
+      "assets/products/ecran/ecran_shop/shop_desk25.webp"
+    ],
+    "description": "The XTRMLAB XK25G24IFF 24.5' 240Hz Fast IPS Morocco is for players looking for extreme fluidity, optimal visual accuracy and uncompromising e-sports experience. Designed to meet the requirements of competitive players, this monitor combines a Fast IPS panel, a 240 Hz refresh rate, ultra-fast response time and faithful color reproduction."
+  }
+   ,
+  {
+    "id": 27,
+    "brand": "MSI",
+    "name": "MSI G255F 24.5' Rapid IPS 180Hz",
+    "full_title": "MSI G255F 24.5' Rapid IPS 180Hz: an immersive gaming experience in Morocco",
+    "price": "1,599.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/ecran/ecran_home/ecran-5.webp",
+    "gallery": [
+      "assets/products/ecran/ecran_home/ecran-6.webp",
+      "assets/products/ecran/ecran_shop/shop_desk26.webp"
+    ],
+    "description": "The MSI G255F 24.5' Rapid IPS 180Hz is more than just a gaming screen. Designed for gamers looking for smooth performance and outstanding image quality, this screen is the perfect ally to dominate every game session. With its fast IPS slab, an impressive 180Hz refresh rate and ultra-fast response time, it meets the requirements of the most competitive players."
+  }
+  
+  ,
+  {
+    "id": 28,
+    "brand": "AOC",
+    "name": "AOC C27G4H 27' 180Hz 0.5ms FHD Curved",
+    "full_title": "AOC C27G4H 27' 180Hz 0.5ms FHD – An immersive monitor for gamers who make no compromises",
+    "price": " 1,549.00",
+    "currency": "DH",
+    "status": "In Stock",
+    "main_image": "assets/products/ecran/ecran_home/ecran-7.webp",
+    "gallery": [
+      "assets/products/ecran/ecran_home/ecran-8.webp",
+      "assets/products/ecran/ecran_shop/shop_desk27.webp"
+    ],
+    "description": "The AOC C27G4H 27' 180Hz 0.5ms FHD Morocco redefines immersive gaming standards with its 27-inch , 180 Hz frequency and a super-fast response time of 0.5 ms. Designed for demanding players looking for a competitive advantage and superior visual comfort, this AOC-signed FHD AOC monitor combines performance, style and ergonomics at an affordable price."
+  }
+
+
+
+
+
+
+
+
 ]
