@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title page  -->
+    <title>Document</title>
+
+    <!-- link font icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- link css style -->
+    <link rel="stylesheet" href="css_/deails.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="top-header">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div>
+            <h1>Tech Shop</h1>
+          </div>
+        </div>
+
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Search for latest tech, gaming gear..."
+          />
+          <button>SEARCH</button>
+        </div>
+
+        <div class="header-actions">
+          <div class="account">
+            <span>Hello, Sign in</span>
+            <div class="account-link">
+              Account & Lists <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <div class="cart" id="cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-badge" id="cart-badge">0</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <div class="categories">
+          <i class="fas fa-bars"></i>
+          <span>Browse Categories</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop-details.html">Shop</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="support">
+          <i class="fas fa-headset"></i>
+          <span>24/7 Support: +212 600 000 000</span>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- start main content -->
+
+    <main>
+       <!-- add cart to  -->
+    <section>
+      <div class="carts">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+          <div class="cart-box">
+            <img src="assets/products/mous/souri-1.webp" alt="mous" />
+            <div class="cart-detail">
+              <h2 class="cart-product-title">Casual Black Polo</h2>
+              <span class="cart-price">$100</span>
+              <div class="cart-quantity">
+                <button id="decremment">-</button>
+                <span class="number">1</span>
+                <button id="decremment">+</button>
+              </div>
+            </div>
+            <i class="fa-solid fa-trash cart-remove"></i>
+          </div>
+        </div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+          <button class="btn-buy">Buy Now</button>
+          <i class="fa-solid fa-xmark" id="cart-close"></i>
+        </div>
+      </div>
+    </section>
+
+      <div class="hero">
+        <!-- hero section -->
+        <section class="hero-container">
+          <!-- Left Content -->
+          <div class="hero-content">
+            <h1 class="title">Special Offers</h1>
+            <p class="subtitle">Save on your favorite products</p>
+
+            <div class="countdown">
+              <div class="time-box">2</div>
+              <div class="time-box">15</div>
+              <div class="time-box">20</div>
+            </div>
+
+            <button class="btn-explore">Explore Deals</button>
+
+            <!-- Bottom Navbar -->
+            <nav class="filter-nav">
+              <a href="#" class="active">All</a>
+              <a href="#">Chair</a>
+              <a href="#">Mous</a>
+              <a href="#">Desk</a>
+              <a href="#">Pc</a>
+              <a href="#">Cask</a>
+            </nav>
+          </div>
+
+          <!-- Right Image -->
+          <div class="hero-image">
+            <img
+              src="assets/banners_hero_section/woman_deails.jpg"
+              alt="Gaming Setup"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/header.js"></script>
+  </body>
+</html>
