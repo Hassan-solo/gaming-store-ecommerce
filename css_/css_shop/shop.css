@@ -1,22 +1,22 @@
 
 
+   
+
+
+@import url(/css_/components/stracture.css);
+@import url(/css_/components/variables.css);
+@import url(/css_/components/header.css);
+@import url(/css_/components/card_products.css);
+@import url(/css_/components/delevry.css);
+@import url(/css_/components/footer.css);
 
 
 
-@import url("../components/header.css");
-@import url("../components/variables.css");
+
 
 :root {
     --primary: #1a3fb5;
     --bg-gray: #f8f9fa;
-}
-
-body {
-    font-family: "Inter", sans-serif;
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-    color: #333;
 }
 
 .container {
@@ -27,11 +27,9 @@ body {
 .product-page {
     display: grid;
     grid-template-columns: 100px 1fr 1fr;
-    /* Gallery | Main Image | Info */
     gap: 30px;
 }
 
-/* Gallery Column */
 .thumb-list {
     display: flex;
     flex-direction: column;
@@ -52,9 +50,7 @@ body {
     border-color: var(--primary);
 }
 
-/* Main Image */
 .main-view {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +63,6 @@ body {
     height: auto;
 }
 
-/* Info Column */
 .product-info {
     padding-left: 20px;
 }
@@ -116,4 +111,11 @@ h1 {
         flex-direction: row;
         order: 2;
     }
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px 5%;
 }

@@ -8,10 +8,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <!-- <link rel="stylesheet" href="css_/components/variables.css" />
-    <link rel="stylesheet" href="css_/components/header.css" /> -->
-    <link rel="stylesheet" href="css_/css_shop/shop.css">
 
+    <link rel="stylesheet" href="css_/css_shop/shop.css" />
   </head>
   <body>
     <!-- Header -->
@@ -56,7 +54,7 @@
         </div>
 
         <div class="nav-links">
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <a href="#">Shop</a>
           <a href="#">Deals</a>
           <a href="#">Contact</a>
@@ -70,121 +68,140 @@
     </header>
     <!-- End Header -->
 
-    <div class="container">
-      <div id="loader">Loading product...</div>
+    <main>
+      <div class="container">
+        <div id="loader">Loading product...</div>
 
-      <div class="product-page" id="product-ui" style="display: none">
-        <!-- Left Thumbnails -->
-        <div class="thumb-list" id="gallery"></div>
+        <div class="product-page" id="product-ui" style="display: none">
+          <!-- Left Thumbnails -->
+          <div class="thumb-list" id="gallery"></div>
 
-        <!-- Middle Image -->
-        <div class="main-view">
-          <img src="" id="main-img" alt="Product Image" />
-        </div>
+          <!-- Middle Image -->
+          <div class="main-view">
+            <img src="" id="main-img" alt="Product Image" />
+          </div>
 
-        <!-- Right Details -->
-        <div class="product-info">
-          <span class="brand-name" id="p-brand"></span>
-          <h1 id="p-name"></h1>
-          <p class="desc" id="p-desc"></p>
-          <div class="price" id="p-price"></div>
-          <button class="btn-cart">Add to card</button>
+          <!-- Right Details -->
+          <div class="product-info">
+            <span class="brand-name" id="p-brand"></span>
+            <h1 id="p-name"></h1>
+            <p class="desc" id="p-desc"></p>
+            <div class="price" id="p-price"></div>
+            <button class="btn-cart">Add to card</button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <script>
+      <section class="tech-collection Ecran">
+        <div class="product-grid">
+          <!-- CARD -->
+        </div>
+      </section>
 
-      const loader = document.getElementById("loader");
-      const productUI = document.getElementById("product-ui");
-      const mainImg = document.getElementById("main-img");
-      const gallery = document.getElementById("gallery");
+      <!-- delivery -->
+      <section class="features-container">
+        <div class="card card-blue">
+          <div class="icon-section">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="text-section">
+            <h3>Home delivery</h3>
+            <p>Your order has been prepared</p>
+          </div>
+        </div>
 
-      // 🔹 Fetch products (easy to replace with PHP later)
-      async function getProducts() {
-        const res = await fetch("data.json");
-        return await res.json();
-      }
+        <div class="card card-green">
+          <div class="icon-section">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="text-section">
+            <h3>Satisfaction guaranteed</h3>
+            <p>Always there to ensure you</p>
+          </div>
+        </div>
 
-      // 🔹 Init page
-      async function initProductPage() {
-        const params = new URLSearchParams(window.location.search);
-        const pid = params.get("id");
+        <div class="card card-green">
+          <div class="icon-section">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="text-section">
+            <h3>Customer support</h3>
+            <p>We are at your service all week</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        // check id
-        if (!pid) {
-          loader.innerHTML = "<h2>Invalid product ID</h2>";
-          return;
-        }
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section brand-info">
+          <h2 class="brand-name">Thec shop</h2>
+          <p class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
+            magnam minus possimus laudantium provident, molestiae, laborum culpa
+            optio dolor sapiente ad unde ipsum facilis accusamus.
+          </p>
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+            <span>+212648757954</span>
+          </div>
+          <p class="hours">Mon - Sat, 9am - 8pm</p>
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+            <span>techShop@gmail.com</span>
+          </div>
+        </div>
 
-        try {
-          const data = await getProducts();
-          const product = data.find((p) => p.id == pid);
+        <div class="footer-section shop-links">
+          <h2 class="footer-title">Shop</h2>
+          <ul>
+            <li><a href="#">Headset</a></li>
+            <li><a href="#">Mouse</a></li>
+            <li><a href="#">Keyboard</a></li>
+            <li><a href="#">Chair</a></li>
+            <li><a href="#">Desk</a></li>
+          </ul>
+        </div>
 
-          if (!product) {
-            loader.innerHTML = "<h2>Product not found</h2>";
-            return;
-          }
+        <div class="footer-section newsletter">
+          <h2 class="footer-title">Join Our Newsletter</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
-          displayProduct(product);
-        } catch (err) {
-          console.error(err);
-          loader.innerHTML = "<h2>Error loading product</h2>";
-        }
-      }
+          <div class="subscribe-box">
+            <input type="email" placeholder="Enter Your Email" />
+            <button>Subscribe</button>
+          </div>
 
-      // 🔹 Display product
-      function displayProduct(p) {
-        loader.style.display = "none";
-        productUI.style.display = "grid";
+          <div class="social-payment">
+            <div class="social-icons">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </div>
+            <div class="payment-methods">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+                alt="PayPal"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                alt="Visa"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
-        // text
-        document.getElementById("p-brand").innerText = p.brand;
-        document.getElementById("p-name").innerText = p.name;
-        document.getElementById("p-desc").innerText = p.description;
-        document.getElementById("p-price").innerText =
-          `${p.price} ${p.currency}`;
+      <div class="footer-bottom">
+        <p>2026 <strong>Thec shop</strong>. All rights reserved</p>
+      </div>
+    </footer>
 
-        // main image
-        mainImg.src = p.main_image;
-
-        // gallery
-        const images = [p.main_image, ...p.gallery];
-
-        gallery.innerHTML = images
-          .map(
-            (img) => `
-        <img src="${img}" class="thumb">
-    `,
-          )
-          .join("");
-
-        // click change image
-        document.querySelectorAll(".thumb").forEach((img) => {
-          img.addEventListener("click", () => {
-            mainImg.src = img.src;
-          });
-        });
-
-        // add to cart (simple version)
-        document.querySelector(".btn-cart").addEventListener("click", () => {
-          addToCart(p);
-        });
-      }
-
-      // 🔹 Cart (localStorage)
-      function addToCart(product) {
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-        cart.push(product);
-
-        localStorage.setItem("cart", JSON.stringify(cart));
-
-        alert("Product added to cart 🛒");
-      }
-
-      // 🔹 Run
-      initProductPage();
-    </script>
+    <script src="js/shop.js"></script>
   </body>
 </html>

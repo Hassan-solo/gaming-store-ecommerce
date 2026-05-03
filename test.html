@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Preview - Skillchairs</title>
+  <link rel="stylesheet" href="css_/components/variables.css">
+  <link rel="stylesheet" href="css_/components/header.css">
+  <style>
+    
+    :root {
+      --primary-blue: #0040C1; /* L-on dyal Add card */
+      --text-blue: #0047AB;    /* L-on dyal l-unwan o l-underline */
+      --price-teal: #00A9BC;   /* L-on dyal l-prix */
+      --green-brand: #28a745;  /* L-on dyal badge l-brand */
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 5rem auto;
+    }
+
+    .product-page {
+      display: grid;
+      grid-template-columns: 120px 1fr 1.2fr;
+      gap: 30px;
+    }
+
+    /* Column 1: Thumbnails */
+    .thumb-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .thumb-list img {
+      width: 100px;
+      height: 85px;
+      object-fit: contain;
+      cursor: pointer;
+      border: 1px solid #eee;
+      padding: 5px;
+      transition: 0.2s;
+    }
+
+    .thumb-list img:hover {
+      border-color: var(--primary-blue);
+    }
+
+    /* Column 2: Main Image */
+    .main-view {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 10px;
+    }
+
+    .main-view img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Column 3: Info */
+    .product-info {
+      padding-left: 10px;
+    }
+
+    .product-info h1 {
+      color: var(--text-blue);
+      font-size: 24px;
+      margin: 0 0 25px 0;
+      line-height: 1.4;
+      font-weight: 700;
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .brand-label {
+      color: #999;
+      font-size: 14px;
+    }
+
+    .brand-tag {
+      background: var(--green-brand);
+      color: white;
+      padding: 4px 14px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .price {
+      color: var(--price-teal);
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+
+    .btn-cart {
+      background: var(--primary-blue);
+      color: white;
+      border: none;
+      padding: 12px 45px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background 0.3s;
+    }
+
+    .btn-cart:hover {
+      background: #0033a0;
+    }
+
+    /* Footer: Description (Underlined like the image) */
+    .footer-desc {
+      grid-column: 1 / span 3;
+      margin-top: 70px;
+    }
+
+    .full-title {
+      color: var(--text-blue);
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .desc-content {
+      line-height: 2.2;
+      font-size: 17px;
+      color: #333;
+      text-align: justify;
+    }
+
+    /* Had l-partie hya li kadir l-khat l-zre9 ta7t l-ktaba */
+    .desc-content u {
+      text-decoration: none;
+      border-bottom: 2px solid var(--text-blue);
+      padding-bottom: 3px;
+    }
+
+    @media (max-width: 900px) {
+      .product-page { grid-template-columns: 1fr; }
+      .thumb-list { flex-direction: row; order: 2; overflow-x: auto; }
+      .main-view { order: 1; }
+      .product-info { order: 3; padding: 0; }
+    }
+  </style>
+</head>
+<body> 
+
+
+      <!-- Header -->
+  <header class="header">
+    <div class="top-header">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div>
+          <h1>Tech Shop</h1>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search for latest tech, gaming gear..." />
+        <button>SEARCH</button>
+      </div>
+
+      <div class="header-actions">
+        <div class="account">
+          <span>Hello, Sign in</span>
+          <div class="account-link">
+            Account & Lists <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="cart" id="cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="categories">
+        <i class="fas fa-bars"></i>
+        <span>Browse Categories</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="support">
+        <i class="fas fa-headset"></i>
+        <span>24/7 Support: +212 600 000 000</span>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <div class="container">
+    <div class="product-page">
+      
+      <!-- Gallery -->
+      <div class="thumb-list">
+        <!-- Placeholder images -->
+        <img src="assets/chair/chair_home/chair-2.webp" onclick="changeImg(this.src)">
+        <img src="assets/chair/chair_shop/shop_chair1.webp" onclick="changeImg(this.src)">
+        <img src="assets/chair/chair_shop/shop_chair2.webp" onclick="changeImg(this.src)">
+      </div>
+
+      <!-- Middle -->
+      <div class="main-view">
+        <img id="main-img" src="assets/chair/chair_home/chair-1.webp" alt="Main View">
+      </div>
+
+      <!-- Info -->
+      <div class="product-info">
+        <h1>Lenovo LOQ 15IAX9E i5-12450HX/16GB DDR5/512GB SSD/RTX 2050 4GB/15.6" 144Hz</h1>
+        
+        <div class="brand-section">
+          <span class="brand-label">Brand</span>
+          <span class="brand-tag">Lenovo</span>
+        </div>
+
+        <div class="price">8,299.00 DH</div>
+        
+        <button class="btn-cart">Add card</button>
+      </div>
+
+      <!-- Footer Description -->
+      <div class="footer-desc">
+        <div class="full-title">AOC C27G4H 27' 180Hz 0.5ms FHD – An immersive monitor for gamers who make no compromises</div>
+        <div class="desc-content">
+          <u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repudiandae cupiditate minus, laborum reprehenderit veniam totam molestias expedita soluta quaerat nulla cumque nam dicta! Cumque praesentium obcaecati et quos nostrum amet error in pariatur dolore ea dolorum eligendi officiis aspernatur corporis perferendis ex esse labore quas. Vero voluptatem ut laboriosam.</u>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function changeImg(src) {
+      document.getElementById('main-img').src = src;
+    }
+  </script>
+
+</body>
+</html>
